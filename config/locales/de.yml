@@ -98,40 +98,40 @@ de:
   errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
-      accepted: must be accepted
-      blank: can't be blank
-      present: must be blank
-      confirmation: ! "doesn't match %{attribute}"
-      empty: can't be empty
-      equal_to: must be equal to %{count}
-      even: must be even
-      exclusion: is reserved
-      greater_than: must be greater than %{count}
-      greater_than_or_equal_to: must be greater than or equal to %{count}
-      inclusion: is not included in the list
-      invalid: is invalid
-      less_than: must be less than %{count}
-      less_than_or_equal_to: must be less than or equal to %{count}
-      not_a_number: is not a number
-      not_an_integer: must be an integer
-      odd: must be odd
-      record_invalid: ! 'Validation failed: %{errors}'
+      accepted: Muss akzeptiert werden
+      blank: Darf nicht leer sein
+      present: Muss leer sein
+      confirmation: ! "Stimmt nicht überein %{attribute}"
+      empty: Darf leer sein
+      equal_to: Es muss gleich sein %{count}
+      even: Muss gerade sein
+      exclusion: Ist rezervird
+      greater_than: Muss grösser sein %{count}
+      greater_than_or_equal_to: Muss grösser sein oder gleich %{count}
+      inclusion: Ist nicht in der Liste augenommen
+      invalid: Ist Ungültig
+      less_than: Muss kleiner sein als %{count}
+      less_than_or_equal_to: Muss kleiner oder gleich sein %{count}
+      not_a_number: Ist keine Nummer
+      not_an_integer: Muss die ganze Zahl sein
+      odd: Ungerade sein muss
+      record_invalid: ! 'Validierung fehlgeschlagen: %{errors}'
       restrict_dependent_destroy:
-        one: "Cannot delete record because a dependent %{record} exists"
-        many: "Cannot delete record because dependent %{record} exist"
-      taken: has already been taken
+        one: "Aufnahme nicht möglich weil eine abhangige löschen %{record} exists"
+        many: "Rekord kann nicht gelöscht werden weil abhängig ist %{record} exist"
+      taken: Wurde bereits gafasst
       too_long:
-        one: is too long (maximum is 1 character)
-        other: is too long (maximum is %{count} characters)
+        one: Ist zu lang(maximum is 1 character)
+        other: Its zu lang(maximum is %{count} characters)
       too_short:
-        one: is too short (minimum is 1 character)
-        other: is too short (minimum is %{count} characters)
+        one: Ist zu Kurz(minimum is 1 character)
+        other: Ist zu Kurz (minimum is %{count} characters)
       wrong_length:
-        one: is the wrong length (should be 1 character)
-        other: is the wrong length (should be %{count} characters)
-      other_than: "must be other than %{count}"
+        one: Ist die falsche Lange (should be 1 character)
+        other: Ist die falsche Lange (should be %{count} characters)
+      other_than: "Mussen andere sein als %{count}"
     template:
-      body: ! 'There were problems with the following fields:'
+      body: ! 'Es gab Probleme mit dem folgendem Foldern:'
       header:
         one: 1 error prohibited this %{model} from being saved
         other: ! '%{count} errors prohibited this %{model} from being saved'
@@ -218,81 +218,81 @@ de:
     en: Englisch
     pl: Polnisch
     de: Deutsch
-  title_about: About
+  title_about: Uber
   title_menu: Menu
-  title_gallery: Gallery
-  title_references: References
-  title_contact: Contact
+  title_gallery: Galerie
+  title_references: Referenzen
+  title_contact: Kontakt
   title_facebook: Facebook
-  title_users: Users
-  title_edit_modal: Edit menu
+  title_users: Benutzer
+  title_edit_modal: Menu bearbeiten
   label_facebook_link: Facebook link
-  button_destroy: Delete
+  button_destroy: Loschen
   button_show: Show
-  button_edit: Edit
-  button_cancel: Cancel
-  button_submit: Save
-  button_update: Update
-  notice_user_created: User successfully created
-  notice_created: Successfully created
-  notice_user_updated: User successfully updated
-  notice_updated: Successfully updated
-  notice_user_deleted: User deleted
-  alert_only_admin_can_register_new_user: Only admin can register new user
-  header_language: Language
-  header_updated: Updated
+  button_edit: Bearbeiten
+  button_cancel: Loschen
+  button_submit: Speichern
+  button_update: Aktualisierung
+  notice_user_created: Benutzer erfolgreich erstellt
+  notice_created: Erforgleich erstellt
+  notice_user_updated: Benutzer erforgleich aktualisiert
+  notice_updated: Erforgleich aktualisiert
+  notice_user_deleted: Benutzer geloscht
+  alert_only_admin_can_register_new_user: Nur Administrator kann neue Benutzer registrieren
+  header_language: Sprachen
+  header_updated: Aktualisiert
   header_show: Show
-  header_edit: Edit
-  title_editing_user: Editing user
-  are_you_sure: Are you sure?
+  header_edit: Bearbeiten
+  title_editing_user: Benutzer bearbeiten
+  are_you_sure: Sind Sie sicher
   restaurant_name: Stylova restaurace
   toggle_navigation: Toggle navigation
-  title_administration: Administration
-  title_back: Back
-  placeholder_new_firstname: Enter new firstname
-  placeholder_new_lastname: Enter new lastname
-  placeholder_new_email: Enter new email
-  placeholder_firstname: Enter firstname
-  placeholder_lastname: Enter lastname
-  placeholder_email: Enter email
-  placeholder_password: Password
-  placeholder_confirm_password: Confirm password
-  button_new_user: New user
-  placeholder_search_by_email: Search by email
-  title_signed_up: Signed up
-  title_times_signed_in: Times signed in
-  last_signed_in: Last signed in
-  last_signed_in_ip: Last signed in ip address
+  title_administration: Administrator
+  title_back: Zuruck
+  placeholder_new_firstname: Geben Sie den Vornammen
+  placeholder_new_lastname: Geben Sie den Nachnammen
+  placeholder_new_email: Geben Sie den E-Mail
+  placeholder_firstname: Geben Sie den Vornamen
+  placeholder_lastname: Geben Sie den Nachnammen
+  placeholder_email: Geben Sie den E-Mail
+  placeholder_password: Kenword
+  placeholder_confirm_password: Kenword bestatigen
+  button_new_user: Neuer Benutzer
+  placeholder_search_by_email: Suche per E-Mail
+  title_signed_up: Registriert
+  title_times_signed_in: Mal anmelden
+  last_signed_in: Letzte Anmeldung bis
+  last_signed_in_ip: Letzte Anmeldung an ip adresse
   title_admin: Admin
-  button_resend_confirmation_instructions: Resend confirmation instructions
-  button_resend_unlock_instructions: Resend unlock instructions
-  button_create_account: Create an account
-  button_forgot_your_password: Forgot your password?
-  button_didnt_recieve_confirmation_instructions: Didn't receive confirmation instructions?
-  button_didnt_recieve_unlock_instructions: Didn't receive unlock instructions?
-  placeholder_enter_your_email: Enter your email
-  button_send_me_instructions_to_reset_password: Send me instructions to reset password
-  button_change_your_password: Change your password
-  title_new_password: New password
-  title_enter_your_new_password: Enter your new password
-  title_confirm_new_password: Confirm new password
-  title_change_my_password: Change my password
-  email_change_pwd1: Someone has requested a link to change your password, and you can do this through the link below.
-  email_change_pwd2: If you didn't request this, please ignore this email.
-  email_change_pwd3: Your password won't change until you access the link above and create a new one.
-  email_confirmation_info: 'You can confirm your account email through the link below:'
-  email_confirm_account: Confirm my account
-  email_unlock_account: Unlock my account
-  placeholder_current_password: Current password
-  new_password_comment: Leave blank if you don't want to change it.
-  current_password_comment: We need your current password to confirm your changes.
-  button_save_settings: Save settings
-  button_cancel_account: Cancel account
-  button_search: Search
-  button_create: Create
-  field_firstname: Firstname
-  field_lastname: Lastname
-  title_remember_me: Remember me
+  button_resend_confirmation_instructions: Erneutes Senden
+  button_resend_unlock_instructions: Erneutes Senden Entriegelungsbefel
+  button_create_account: Ein Konto erstellen
+  button_forgot_your_password: Kenword vergessen?
+  button_didnt_recieve_confirmation_instructions: Haben Sie keine Bastätigung uber eine Anleitung?
+  button_didnt_recieve_unlock_instructions: Anleitung nicht empfangen?
+  placeholder_enter_your_email: Geben Sie einfach Ihre E-Mail
+  button_send_me_instructions_to_reset_password: Senden Sie mir Anweisung,Kennword zürucksetzen
+  button_change_your_password: Ändern Sie Ihre Kennword
+  title_new_password: Neue Kennword
+  title_enter_your_new_password: Schreiben Sie Ihre neue Kennword
+  title_confirm_new_password: Bestätigen Sie das neue Kennword
+  title_change_my_password: Ändere meine Kennword
+  email_change_pwd1: Jemand hat einen Link gebeten Ihr Kennword zu andern und Sie konnen dies durch die folgenden Link tun.
+  email_change_pwd2: Wenn Sie nicht angefordet haben,bitte diese E-mail ignorieren.
+  email_change_pwd3: Ihr Kennword wird nicht geandert,bis Sie auf den obigen Link zugreifen und ein neues erstellen.
+  email_confirmation_info: 'Sie können Ihr Konto E-Mail über den untenstehenden Link bestätigen:'
+  email_confirm_account:  Bestätigen Sie meine Konto
+  email_unlock_account: Schalte mein Konto
+  placeholder_current_password: Aktuelles Kennword
+  new_password_comment: Leer lassen,wenn Sie nicht wollen es ändern.
+  current_password_comment: Wir brauchen Ihre Kenword um Ihre Anderungen zu bestätigen.
+  button_save_settings: Einstellungen speichern
+  button_cancel_account: Konto löschen
+  button_search: Suchen
+  button_create: Erstellen
+  field_firstname: Vorname
+  field_lastname: Nachname
+  title_remember_me: Mich erinnern
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
