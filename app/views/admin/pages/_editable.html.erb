@@ -1,0 +1,22 @@
+<table class="table table-striped table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th><%= t(:header_language) %></th>
+      <th><%= t(:header_updated) %></th>
+      <th><%= t(:header_show) %></th>
+      <th><%= t(:header_edit) %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% available_languages.map(&:to_s).each do |lang| %>
+      <tr class="admin-editable">
+        <% template = @templates.where(:language => lang).first %>
+        <td><%= image_tag(flag_file(lang), :title => t(:"lang_names.#{lang}")) %></td>
+        <td><%= l( template.updated_at, :format => :long) if template %></td>
+        <td><%= link_to t(:button_show), template_path(template) if template %></td>
+        <td><%= link_to t(:button_edit), modal_templates_path(:template => {:language => lang, :page => page}), remote: true %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

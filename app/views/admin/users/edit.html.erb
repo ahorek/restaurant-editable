@@ -1,0 +1,48 @@
+<div class="page-header">
+  <h2><%= t(:title_editing_user) %> <%= @user.email %></h2>
+</div>
+
+<%= form_for [:admin, @user], :html => { :class => "form-horizontal", :role => "form" } do |f| -%>
+
+  <%= f.error_messages %>
+
+  <div class="form-group">
+    <%= f.label :firstname, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-4">
+      <%= f.text_field :firstname, :type => :text, :class => "form-control", :placeholder => t(:placeholder_new_firstname) %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :lastname, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-4">
+      <%= f.text_field :lastname, :type => :text, :class => "form-control", :placeholder => t(:placeholder_new_lastname) %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :email, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-4">
+      <%= f.email_field :email, :type => :login, :class => "form-control", :placeholder => t(:placeholder_new_email) %>
+    </div>
+  </div>
+
+  <% if @user.revokable? || !@user.admin? %>
+    <div class="form-group">
+      <%= f.label :admin, :class => "col-sm-2 control-label" %>
+      <div class="col-sm-4">
+        <%= f.hidden_field :admin, :value => false, :class => "form-control" %>
+        <%= f.check_box :admin, :class => "form-control" %>
+      </div>
+    </div>
+  <% end %>
+
+  </br>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-4">
+      <%= f.submit t(:button_update), :class => "btn btn-default" %>
+    </div>
+  </div>
+
+<% end -%>

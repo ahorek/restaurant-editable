@@ -1,0 +1,11 @@
+<% include_galereya_headers_tags %>
+
+<div class="thumbnails">
+   <%= image_tag('http://google.com/images/srpr/logo11w.png', {:'data-fullsrc' => 'http://google.com/images/srpr/logo11w.png', :alt => 'Google'}) %>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.thumbnails').each(function() { $(this).galereya({size: 200}); });
+  });
+</script>

@@ -1,0 +1,44 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#baseapp-navbar-collapse-menu">
+        <span class="sr-only"><%= t(:toggle_navigation) %></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <%= link_to t(:title_home), root_path, :class => "navbar-brand" %>
+    </div>
+
+    <div class="collapse navbar-collapse" id="baseapp-navbar-collapse-menu">
+      <div class="floatleft">
+        <ul class="nav navbar-nav">
+          <li><%= link_to t(:title_about), about_pages_path %></li>
+          <li><%= link_to t(:title_menu), menus_pages_path %></li>
+          <li><%= link_to t(:title_gallery), gallery_pages_path %></li>
+          <li><%= link_to t(:title_references), references_pages_path %></li>
+          <li><%= link_to t(:title_contact), contact_pages_path %></li>
+          <% if fb = Setting.where(:name => 'facebook_url').first.try(:value) %>
+            <li><%= link_to t(:title_facebook), fb %></li>
+          <% end %>
+
+          <% if user_signed_in? %>
+            <li><%= link_to t(:title_account_settings), edit_user_registration_path %></li>
+            <% if current_user.admin? %>
+              <li><%= link_to t(:title_administration), admin_path %></li>
+            <% end %>
+            <li><%= link_to t(:title_sign_out), destroy_user_session_path %></li>
+          <% else %>
+            <li><%= link_to t(:title_sign_in), new_user_session_path %></li>
+          <% end -%>
+        </ul>
+      </div>
+
+      <div class="floatright">
+        <%= render :partial => 'layouts/application/languages' %>
+      </div>
+    </div>
+
+  </div>
+</nav>

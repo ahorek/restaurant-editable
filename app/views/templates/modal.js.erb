@@ -1,0 +1,22 @@
+$("#ajax-modal").html("<%=j(render :partial => 'modal_form', :locals => {:language => @language, :page => @page}) %>");
+$('#ajax-modal').dialog({
+    modal: true,
+    resizable: true,
+    maxHeight: $("body").height()+"px",
+    title: '<%=j t(:title_edit_modal) %>',
+    width: 900
+});
+$('#ajax-modal').dialog("option", {
+  buttons: [
+    {
+      text: '<%=j t(:button_cancel) %>',
+      click: function() {$(this).dialog('close');}
+    },
+    {
+      text: '<%=j t(:button_submit) %>',
+      click: function() {$(this).find('form').submit();}
+    }
+  ]
+});
+
+$('.ckeditor').ckeditor({});

@@ -1,0 +1,57 @@
+<div class="page-header">
+  <h1><%=t(:title_users)%></h1>
+</div>
+
+<%= search_form_for @q, :url => admin_users_path, :html => { :method => :get, :class => "well form-inline" } do |f| %>
+  <div class="search-fields floatleft">
+    <div class="form-group">
+      <%= f.text_field :email_cont, :type => "search", :class => "form-control", :placeholder => t(:placeholder_search_by_email) %>
+    </div>
+
+    <%= f.submit t(:button_search), :class => "btn btn-default" %>
+  </div>
+  <div class="new-user-button floatright">
+    <%= link_to t(:button_new_user), new_admin_user_path, :class => 'btn btn-default' %>
+  </div>
+  <div class="clear"></div>
+<% end %>
+
+<table class="sortable table table-striped table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th><%= sortable "id", "ID" %></th>
+      <th><%= sortable "email" %></th>
+      <th><%= sortable "firstname", t(:field_firstname) %></th>
+      <th><%= sortable "lastname", t(:field_lastname) %></th>
+      <th><%= sortable "created_at", t(:signed_up) %></th>
+      <th><%= sortable "sign_in_count", t(:times_signed_in) %></th>
+      <th><%= sortable "last_sign_in_at", t(:last_signed_in) %></th>
+      <th><%= sortable "last_sign_in_ip", t(:last_signed_in_ip) %></th>
+      <th><%= t(:title_admin) %></th>
+      <th><%= t(:button_edit) %></th>
+      <th><%= t(:button_destroy) %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr class="user">
+        <td><%= link_to(user.id, admin_user_path(user)) %></td>
+        <td><%= link_to(user.email, admin_user_path(user)) %></td>
+        <td><%= h( user.firstname ) %></td>
+        <td><%= h( user.lastname ) %></td>
+        <td><%= l( user.created_at, :format => :long) %></td>
+        <td><%= user.sign_in_count %></td>
+        <td><%= l( user.last_sign_in_at, :format => :long) if user.last_sign_in_at %></td>
+        <td><%= user.last_sign_in_ip %></td>
+        <td><%= user.admin? %></td>
+        <td><%= link_to t(:button_edit), edit_admin_user_path(user) %></td>
+        <td>
+        <%= link_to t(:button_destroy), admin_user_path(user),
+        :data => { :confirm => t(:are_you_sure) }, :method => :delete, :class => user.deletable? ? '' : 'hidden' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @users %>

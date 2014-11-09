@@ -1,0 +1,43 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+
+
+
+*/
+
+
+.top48 { margin-top: 48px; }
+.alert-success {
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+    color: #1A0000;
+}
+.alert-error, #error_explanation, #errorExplanation {
+    background-color: #E60000;
+    border-color: #FF6666;
+    color: #1A0000;
+}
+.alert, #error_explanation, #errorExplanation {
+    border-radius: 10px;
+}
+.floatleft {
+    float: left;
+}
+.floatright {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+.hidden {
+    display: none;
+}
+.navbar-nav.languages > li > a {
+    padding: 5px 5px;
+}
+.navbar-nav.languages > li > a > img {
+    width: 32px;
+    height: 16px;
+}

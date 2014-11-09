@@ -1,0 +1,36 @@
+<div class="page-header">
+  <h2><%= t(:button_change_your_password) %></h2>
+</div>
+
+<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put, :class => "form-horizontal", :role => "form" }) do |f| %>
+
+  <%= devise_error_messages! %>
+
+  <%= f.hidden_field :reset_password_token %>
+
+  <div class="form-group">
+    <%= f.label :password, t(:title_new_password), :class => "col-sm-2 control-label" %>
+    <div class="col-sm-4">
+      <%= f.password_field :password, :class => "form-control", :placeholder => t(:title_enter_your_new_password) %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password_confirmation, t(:title_confirm_new_password), :class => "col-sm-2 control-label" %>
+    <div class="col-sm-4">
+      <%= f.password_field :password_confirmation, :class => "form-control", :placeholder => t(:title_confirm_new_password) %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-4">
+      <button type="submit" class="btn btn-default"><%= t(:title_change_my_password) %></button>
+    </div>
+  </div>
+<% end %>
+
+<div class="row top48">
+  <div class="col-sm-offset-2 col-sm-4">
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

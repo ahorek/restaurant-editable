@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= t(:restaurant_name) %></title>
+    <%= render :partial => 'layouts/header_scripts' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= yield :head %>
+  </head>
+
+  <body>
+    <%= render "layouts/application/header" %>
+    <div class="container">
+      <%= render "layouts/application/flash_messages" %>
+      <%= yield %>
+      <div id="ajax-modal" title=""><p></p></div>
+    </div>
+  </body>
+</html>

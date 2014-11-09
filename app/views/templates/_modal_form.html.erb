@@ -1,0 +1,5 @@
+<%= form_for @template do |f| %>
+  <%= f.text_area :description, :class => 'ckeditor' %>
+  <%= f.hidden_field :language, :value => language %>
+  <%= f.hidden_field :page, :value => page %>
+<% end %>

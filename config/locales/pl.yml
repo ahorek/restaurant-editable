@@ -1,0 +1,306 @@
+pl:
+  date:
+    abbr_day_names:
+    - nie
+    - pon
+    - wto
+    - śro
+    - czw
+    - pia
+    - sob
+    abbr_month_names:
+    -
+    - sty
+    - lut
+    - mar
+    - kwi
+    - maj
+    - cze
+    - lip
+    - sie
+    - wrz
+    - paź
+    - lis
+    - gru
+    day_names:
+    - Niedziela
+    - Poniedziałek
+    - Wtorek
+    - Środa
+    - Czwartek
+    - Piątek
+    - Sobota
+    formats:
+      default: ! '%Y-%m-%d'
+      long: ! '%d %B %Y'
+      short: ! '%d %b'
+    month_names:
+    -
+    - Styczeń
+    - Luty
+    - Marzec
+    - Kwiecień
+    - Maj
+    - Czerwiec
+    - Lipiec
+    - Sierpień
+    - Wrzesień
+    - Październik
+    - Listopad
+    - Grudzień
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: około godziny
+        other: około %{count} godzin
+      about_x_months:
+        one: około miesiąca
+        other: około %{count} miesięcy
+      about_x_years:
+        one: około roku
+        other: około %{count} lat
+      almost_x_years:
+        one: prawie %{count} lata
+        other: prawie %{count} lat
+      half_a_minute: pół minuty
+      less_than_x_minutes:
+        one: mniej niż minutę
+        other: mniej niż %{count} minut
+      less_than_x_seconds:
+        one: mniej niż sekundę
+        other: mniej niż %{count} sekund
+      over_x_years:
+        one: ponad rok
+        other: ponad %{count} lat
+      x_days:
+        one: 1 dzień
+        other: ! '%{count} dni'
+      x_hours:
+        one: 1 godzina
+        other: ! '%{count} godzin'
+      x_minutes:
+        one: minutę
+        other: ! '%{count} minut'
+      x_months:
+        one: 1 miesiąc
+        other: ! '%{count} miesięcy'
+      x_seconds:
+        one: sekundę
+        other: ! '%{count} sekund'
+    prompts:
+      day: Den
+      hour: Hodina
+      minute: Minuta
+      month: Měsíc
+      second: Sekunda
+      year: Rok
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: musí být potvrzeno
+      blank: nesmí být prázdný
+      present: musí být prázdný
+      confirmation: ! "doesn't match %{attribute}"
+      empty: nesmí být prázdný
+      equal_to: musí být přesně %{count}
+      even: musí být sudý
+      exclusion: je vyhrazen
+      greater_than: musí být větší než %{count}
+      greater_than_or_equal_to: must be greater than or equal to %{count}
+      inclusion: není obsažen v seznamu
+      invalid: je neplatné
+      less_than: must be less than %{count}
+      less_than_or_equal_to: must be less than or equal to %{count}
+      not_a_number: není číslo
+      not_an_integer: musí být číslo
+      odd: musí být lichý
+      record_invalid: ! 'Chyba validace: %{errors}'
+      restrict_dependent_destroy:
+        one: "Cannot delete record because a dependent %{record} exists"
+        many: "Cannot delete record because dependent %{record} exist"
+      taken: has already been taken
+      too_long:
+        one: je příliš dlouhý (maximum je 1 znak)
+        other: je příliš dlouhý (maximum je %{count} znaků)
+      too_short:
+        one: je příliš krátký (minimum je 1 znak)
+        other: je příliš krátký (minimum je %{count} znaků)
+      wrong_length:
+        one: is the wrong length (should be 1 character)
+        other: is the wrong length (should be %{count} characters)
+      other_than: "must be other than %{count}"
+    template:
+      body: ! 'There were problems with the following fields:'
+      header:
+        one: 1 chyba zabránila uložení %{model}
+        other: ! '%{count} chyb zabránilo uložení %{model}'
+  helpers:
+    select:
+      prompt: Prosím vyberte
+    submit:
+      create: Vytvořit %{model}
+      submit: Uložit %{model}
+      update: Aktualizovat %{model}
+  number:
+    currency:
+      format:
+        delimiter: ! ','
+        format: ! '%u%n'
+        precision: 2
+        separator: .
+        significant: false
+        strip_insignificant_zeros: false
+        unit: $
+    format:
+      delimiter: ! ','
+      precision: 3
+      separator: .
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: Billion
+          million: Million
+          quadrillion: Quadrillion
+          thousand: Thousand
+          trillion: Trillion
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ', a '
+      two_words_connector: ! ' a '
+      words_connector: ! ', '
+  time:
+    am: przed południem
+    formats:
+      default: ! '%a, %d %b %Y, %H:%M:%S %z'
+      long: ! '%d %B %Y, %H:%M'
+      short: ! '%d %b, %H:%M'
+    pm: po południu
+  title_account_settings: Nastavení účtu
+  title_sign_out: Wymeldować się
+  title_home: Úvod
+  title_sign_in: Přihlásit se
+  title_register: Registrace
+  title_welcome: Vítejte
+  languages:
+    cs: Čeština
+    en: English
+    pl: Polski
+    de: Deutsch
+  lang_names:
+    cs: Czeski
+    en: Angielski
+    pl: Polski
+    de: Niemiecki
+  title_about: About
+  title_menu: Menu
+  title_gallery: Gallery
+  title_references: References
+  title_contact: Contact
+  title_facebook: Facebook
+  title_users: Users
+  title_edit_modal: Edit menu
+  label_facebook_link: Facebook link
+  button_destroy: Delete
+  button_show: Show
+  button_edit: Edit
+  button_cancel: Zrušit
+  button_submit: Uložit
+  button_update: Update
+  notice_user_created: User successfully created
+  notice_created: Successfully created
+  notice_user_updated: User successfully updated
+  notice_updated: Successfully updated
+  notice_user_deleted: User deleted
+  alert_only_admin_can_register_new_user: Only admin can register new user
+  header_language: Language
+  header_updated: Updated
+  header_show: Show
+  header_edit: Edit
+  title_editing_user: Editing user
+  are_you_sure: Are you sure?
+  restaurant_name: Stylová restaurace
+  toggle_navigation: Toggle navigation
+  title_administration: Administration
+  title_back: Zpět
+  placeholder_new_firstname: Enter new firstname
+  placeholder_new_lastname: Zadejte nové příjmení
+  placeholder_new_email: Zadejte nový email
+  placeholder_firstname: Zadejte jméno
+  placeholder_lastname: Zadejte příjmení
+  placeholder_email: Zadejte email
+  placeholder_password: Heslo
+  placeholder_confirm_password: Potvrďte heslo
+  button_new_user: New user
+  placeholder_search_by_email: Search by email
+  title_signed_up: Signed up
+  title_times_signed_in: Times signed in
+  last_signed_in: Last signed in
+  last_signed_in_ip: Last signed in ip address
+  title_admin: Admin
+  button_resend_confirmation_instructions: Resend confirmation instructions
+  button_resend_unlock_instructions: Resend unlock instructions
+  button_create_account: Create an account
+  button_forgot_your_password: Forgot your password?
+  button_didnt_recieve_confirmation_instructions: Didn't receive confirmation instructions?
+  button_didnt_recieve_unlock_instructions: Didn't receive unlock instructions?
+  placeholder_enter_your_email: Enter your email
+  button_send_me_instructions_to_reset_password: Zaslat instrukce k resetování hesla
+  button_change_your_password: Change your password
+  title_new_password: New password
+  title_enter_your_new_password: Enter your new password
+  title_confirm_new_password: Confirm new password
+  title_change_my_password: Change my password
+  email_change_pwd1: Someone has requested a link to change your password, and you can do this through the link below.
+  email_change_pwd2: If you didn't request this, please ignore this email.
+  email_change_pwd3: Your password won't change until you access the link above and create a new one.
+  email_confirmation_info: 'You can confirm your account email through the link below:'
+  email_confirm_account: Confirm my account
+  email_unlock_account: Unlock my account
+  placeholder_current_password: Current password
+  new_password_comment: Leave blank if you don't want to change it.
+  current_password_comment: We need your current password to confirm your changes.
+  button_save_settings: Save settings
+  button_cancel_account: Cancel account
+  button_search: Search
+  button_create: Create
+  field_firstname: Firstname
+  field_lastname: Lastname
+  title_remember_me: Remember me
+
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

@@ -1,0 +1,52 @@
+<div class="page-header">
+  <h2><%= t(:button_new_user) %></h2>
+</div>
+
+<%= form_for [:admin, @user], :html => { :class => "form-horizontal", :role => "form" } do |f| -%>
+
+  <%= f.error_messages %>
+
+  <div class="form-group">
+    <%= f.label :firstname, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-4">
+      <%= f.text_field :firstname, :type => :text, :class => "form-control", :placeholder => t(:placeholder_firstname) %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :lastname, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-4">
+      <%= f.text_field :lastname, :type => :text, :class => "form-control", :placeholder => t(:placeholder_lastname) %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :email, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-4">
+      <%= f.email_field :email, :type => :login, :class => "form-control", :placeholder => t(:placeholder_lastname) %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-4">
+      <%= f.password_field :password, :class => "form-control", :placeholder => t(:placeholder_password) %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password_confirmation, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-4">
+      <%= f.password_field :password_confirmation, :class => "form-control", :placeholder => t(:placeholder_confirm_password) %>
+    </div>
+  </div>
+
+  </br>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-4">
+      <%= f.submit t(:button_create), :class => "btn btn-default" %>
+    </div>
+  </div>
+
+<% end -%>
