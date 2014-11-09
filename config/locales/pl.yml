@@ -6,7 +6,7 @@ pl:
     - wto
     - śro
     - czw
-    - pia
+    - pią
     - sob
     abbr_month_names:
     -
@@ -92,43 +92,43 @@ pl:
         one: sekundę
         other: ! '%{count} sekund'
     prompts:
-      day: Den
-      hour: Hodina
+      day: Dzien
+      hour: Godzina
       minute: Minuta
-      month: Měsíc
+      month: Miesiac
       second: Sekunda
       year: Rok
   errors: &errors
     format: ! '%{attribute} %{message}'
     messages:
-      accepted: musí být potvrzeno
-      blank: nesmí být prázdný
-      present: musí být prázdný
-      confirmation: ! "doesn't match %{attribute}"
-      empty: nesmí být prázdný
-      equal_to: musí být přesně %{count}
-      even: musí být sudý
-      exclusion: je vyhrazen
-      greater_than: musí být větší než %{count}
-      greater_than_or_equal_to: must be greater than or equal to %{count}
-      inclusion: není obsažen v seznamu
-      invalid: je neplatné
-      less_than: must be less than %{count}
-      less_than_or_equal_to: must be less than or equal to %{count}
-      not_a_number: není číslo
-      not_an_integer: musí být číslo
-      odd: musí být lichý
+      accepted: musi byc potwierdzone
+      blank: nie moze byc pusty
+      present: musi byc pusty
+      confirmation: ! "nie znaleziono %{attribute}"
+      empty: nie moze byc pusty
+      equal_to: musi byc dokladnie %{count}
+      even: musi byc parzysty
+      exclusion: jest zarezerwowany
+      greater_than: musi byc wiekszy niz %{count}
+      greater_than_or_equal_to: musi byc wiekszy albo rowny  %{count}
+      inclusion: niedostepny w spisie
+      invalid: jest niewazny
+      less_than: musi byc mniejsza %{count}
+      less_than_or_equal_to: musi byc mniejsza albo rowna %{count}
+      not_a_number: nie ma numeru
+      not_an_integer: musi byc numer
+      odd: musi byc dziwny
       record_invalid: ! 'Chyba validace: %{errors}'
       restrict_dependent_destroy:
         one: "Cannot delete record because a dependent %{record} exists"
         many: "Cannot delete record because dependent %{record} exist"
       taken: has already been taken
       too_long:
-        one: je příliš dlouhý (maximum je 1 znak)
-        other: je příliš dlouhý (maximum je %{count} znaků)
+        one: jest za dlugi (maximum je 1 znak)
+        other: jest za dlugi (maximum je %{count} znaků)
       too_short:
-        one: je příliš krátký (minimum je 1 znak)
-        other: je příliš krátký (minimum je %{count} znaků)
+        one: jest za krotki (minimum je 1 znak)
+        other: jest za krotki (minimum je %{count} znaků)
       wrong_length:
         one: is the wrong length (should be 1 character)
         other: is the wrong length (should be %{count} characters)
@@ -140,11 +140,11 @@ pl:
         other: ! '%{count} chyb zabránilo uložení %{model}'
   helpers:
     select:
-      prompt: Prosím vyberte
+      prompt: Proszę wybrać
     submit:
-      create: Vytvořit %{model}
-      submit: Uložit %{model}
-      update: Aktualizovat %{model}
+      create: Wytworzyć %{model}
+      submit: Ułożyć %{model}
+      update: Aktualizować %{model}
   number:
     currency:
       format:
@@ -205,12 +205,12 @@ pl:
       long: ! '%d %B %Y, %H:%M'
       short: ! '%d %b, %H:%M'
     pm: po południu
-  title_account_settings: Nastavení účtu
+  title_account_settings: Ustawenie konta
   title_sign_out: Wymeldować się
-  title_home: Úvod
-  title_sign_in: Přihlásit se
-  title_register: Registrace
-  title_welcome: Vítejte
+  title_home: Wprowadzenie
+  title_sign_in: Zalogować się
+  title_register: Registracja
+  title_welcome: Witamy
   languages:
     cs: Čeština
     en: English
@@ -221,21 +221,21 @@ pl:
     en: Angielski
     pl: Polski
     de: Niemiecki
-  title_about: About
-  title_menu: Menu
-  title_gallery: Gallery
-  title_references: References
-  title_contact: Contact
+  title_about: O nas
+  title_menu: Meni
+  title_gallery: Galeria
+  title_references: Referencje
+  title_contact: Kontakt
   title_facebook: Facebook
-  title_users: Users
-  title_edit_modal: Edit menu
+  title_users: Użytkownicy
+  title_edit_modal: Edycja meni
   label_facebook_link: Facebook link
-  button_destroy: Delete
+  button_destroy: Wykasowanie
   button_show: Show
-  button_edit: Edit
-  button_cancel: Zrušit
-  button_submit: Uložit
-  button_update: Update
+  button_edit: Edycja
+  button_cancel: Skasować
+  button_submit: Zapisać
+  button_update: Aktualizować
   notice_user_created: User successfully created
   notice_created: Successfully created
   notice_user_updated: User successfully updated
@@ -251,15 +251,15 @@ pl:
   restaurant_name: Stylová restaurace
   toggle_navigation: Toggle navigation
   title_administration: Administration
-  title_back: Zpět
-  placeholder_new_firstname: Enter new firstname
-  placeholder_new_lastname: Zadejte nové příjmení
-  placeholder_new_email: Zadejte nový email
-  placeholder_firstname: Zadejte jméno
-  placeholder_lastname: Zadejte příjmení
-  placeholder_email: Zadejte email
-  placeholder_password: Heslo
-  placeholder_confirm_password: Potvrďte heslo
+  title_back: Z powrotem
+  placeholder_new_firstname: Wpisać nowe imię
+  placeholder_new_lastname: Wpisać nowe nazwisko
+  placeholder_new_email: Wpisać nowy email
+  placeholder_firstname: Wpisać imię
+  placeholder_lastname: Wpisać nazwisko
+  placeholder_email: Wpisać email
+  placeholder_password: Hasło
+  placeholder_confirm_password: Potwierdzić hasło
   button_new_user: New user
   placeholder_search_by_email: Search by email
   title_signed_up: Signed up
@@ -289,6 +289,13 @@ pl:
   placeholder_current_password: Current password
   new_password_comment: Leave blank if you don't want to change it.
   current_password_comment: We need your current password to confirm your changes.
+  button_save_settings: Zachowaj ustawienia
+  button_cancel_account: Zmarz konto
+  button_search: Szukaj
+  button_create: Utórz
+  field_firstname: Imię
+  field_lastname: Nazwisko
+  title_remember_me: Zapamiętaj mnie
   button_save_settings: Save settings
   button_cancel_account: Cancel account
   button_search: Search
