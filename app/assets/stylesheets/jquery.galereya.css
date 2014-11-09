@@ -251,8 +251,8 @@
             transition: opacity .3s ease-out;
         }
 
-        .galereya-slider-nav.left { left: 0; background-image: url(assets/galereya/galereya-arrow_prev.png); }
-        .galereya-slider-nav.right { right: 0; background-image: url(assets/galereya/galereya-arrow_next.png); }
+        .galereya-slider-nav.left { left: 0; background-image: url(../assets/galereya/galereya-arrow_prev.png); }
+        .galereya-slider-nav.right { right: 0; background-image: url(../assets/galereya/galereya-arrow_next.png); }
 
         .galereya-slider-nav:active {
             opacity: 0.5;
