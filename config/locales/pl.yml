@@ -289,7 +289,6 @@ pl:
   placeholder_current_password: Current password
   new_password_comment: Leave blank if you don't want to change it.
   current_password_comment: We need your current password to confirm your changes.
-<<<<<<< HEAD
   button_save_settings: Zachowaj ustawienia
   button_cancel_account: Zmarz konto
   button_search: Szukaj
