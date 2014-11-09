@@ -23,9 +23,6 @@
           <li><%= link_to t(:title_gallery), gallery_pages_path %></li>
           <li><%= link_to t(:title_references), references_pages_path %></li>
           <li><%= link_to t(:title_contact), contact_pages_path %></li>
-          <% if fb = Setting.where(:name => 'facebook_url').first.try(:value) %>
-            <li><%= link_to t(:title_facebook), fb %></li>
-          <% end %>
 
           <% if user_signed_in? %>
             <li><%= link_to t(:title_account_settings), edit_user_registration_path %></li>

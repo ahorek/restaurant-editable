@@ -1,8 +1,9 @@
-<div>
-  <ul>
+<div class="floatright">
+  <ul class="nav navbar-nav">
     <% if (fb = Setting.where(:name => 'facebook_url').first.try(:value)).present? %>
-      <li><%= link_to t(:title_facebook), fb %></li>
+      <li><%= link_to(image_tag('icon_facebook.png', :title => t(:title_facebook)), fb) %></li>
     <% end %>
-    <li><%= link_to(t(:title_wififree), index_admin_pages_path) %></li>
+    <li><%= link_to(image_tag('icon_wififree.png', :title => t(:title_wififree)), '#') %></li>
   </ul>
 </div>
+<div class="clear"></div>
