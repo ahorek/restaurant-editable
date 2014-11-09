@@ -289,6 +289,7 @@ pl:
   placeholder_current_password: Current password
   new_password_comment: Leave blank if you don't want to change it.
   current_password_comment: We need your current password to confirm your changes.
+<<<<<<< HEAD
   button_save_settings: Zachowaj ustawienia
   button_cancel_account: Zmarz konto
   button_search: Szukaj
@@ -296,6 +297,16 @@ pl:
   field_firstname: Imię
   field_lastname: Nazwisko
   title_remember_me: Zapamiętaj mnie
+=======
+  button_save_settings: Save settings
+  button_cancel_account: Cancel account
+  button_search: Search
+  button_create: Create
+  field_firstname: Firstname
+  field_lastname: Lastname
+  title_remember_me: Remember me
+  title_facebook_popup: Enter facebook url
+>>>>>>> 32a712566ee3b758769667d4ff1173e5286e8a9d
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
