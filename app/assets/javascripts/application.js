@@ -37,6 +37,6 @@ function initEditable() {
 $(document).ready(function () {
     initEditable();
     $('.thumbnails').each(function () {
-        $(this).galereya({size: 200});
+        $(this).galereya({size: 200, spacing: 20});
     });
 });
