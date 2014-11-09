@@ -13,6 +13,7 @@ class PagesController < ApplicationController
   end
 
   def gallery
+    @templates = Template.where(:page => 'gallery')
   end
 
   def menu

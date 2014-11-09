@@ -23,6 +23,8 @@ class Admin::PagesController < PagesController
   end
 
   def gallery
+    super
+    @page = 'gallery'
   end
 
   def references

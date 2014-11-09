@@ -1,11 +1,4 @@
-<% include_galereya_headers_tags %>
-
+<%= raw @templates.where(:language => I18n.locale.to_s).first.try(:description) %>
 <div class="thumbnails">
-   <%= image_tag('http://google.com/images/srpr/logo11w.png', {:'data-fullsrc' => 'http://google.com/images/srpr/logo11w.png', :alt => 'Google'}) %>
+   <img src="gallery/backgroud/DSC_1109-9cc0dd4358c189cffe4920fa742608cd.JPG" data-fullsrc="gallery/backgroud/DSC_1109-9cc0dd4358c189cffe4920fa742608cd.JPG" alt="Google"></img>
 </div>
-
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.thumbnails').each(function() { $(this).galereya({size: 200}); });
-  });
-</script>
