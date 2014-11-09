@@ -13,7 +13,7 @@ pl:
       unconfirmed: 'Musisz najpierw aktywować swoje konto aby kontynuować.'
       locked: 'Twoje konto jest zablokowane.'
       invalid: 'Niepoprawny email lub hasło.'
-      invalid_token: 'Niepoprawny token autentykujący.'
+      invalid_token: 'Niepoprawny token autentyczny.'
       timeout: 'Twoja sesja wygasła, zaloguj się ponownie aby kontynuować.'
       inactive: 'Twoje konto nie zostało jeszcze aktywowane.'
     sessions:
