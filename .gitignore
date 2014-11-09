@@ -6,4 +6,5 @@ tmp/**/*
 config/database.yml
 vendor/bundle
 /Gemfile.local
+/db/schema.rb
 public/assets/**/*
