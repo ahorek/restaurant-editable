@@ -6,7 +6,9 @@
  *= require_tree .
 */
 
-.top48 { margin-top: 48px; }
+.top48 {
+    margin-top: 48px;
+}
 .alert-success {
     background-color: #DFF0D8;
     border-color: #D6E9C6;
@@ -49,7 +51,11 @@
     height: 344px;
     background: url("/assets/title_logo.jpg") no-repeat center;
 }
+#top_nav {
+    background: url("/assets/top_nav_background.png");
+}
 @media (max-width:760px) {
-.top_logo a > div {
-    background: url("/assets/title_logo_mobile.jpg") no-repeat center;
+    .top_logo a > div {
+        background: url("/assets/title_logo_mobile.jpg") no-repeat center;
+    }
 }

@@ -20,8 +20,4 @@ class PagesController < ApplicationController
     @templates = Template.where(:page => 'menu')
   end
 
-  def references
-    @templates = Template.where(:page => 'references')
-  end
-
 end

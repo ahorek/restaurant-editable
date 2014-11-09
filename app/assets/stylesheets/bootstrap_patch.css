@@ -1,0 +1,49 @@
+.navbar-default .navbar-nav > li > a {
+    color: black;
+    font-size: 20px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.navbar-header a.navbar-brand {
+    color: black;
+    font-size: 20px;
+    display: none;
+}
+@media (max-width:760px) {
+    .navbar-header a.navbar-brand {
+        color: black;
+        font-size: 20px;
+        display: block;
+    }
+}
+.navbar-header a.navbar-brand:hover,
+.navbar-header a.navbar-brand:focus {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.navbar-default .navbar-toggle {
+    border-color: black;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+.navbar-default .navbar-collapse {
+    border-color: black;
+}
+.navbar-default .navbar-form {
+    border-color: black;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}

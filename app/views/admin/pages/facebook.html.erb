@@ -1,3 +1,3 @@
 <label><%= t(:label_facebook_link) %></label>
-<span class="editable" data-type="textarea" data-pk="<%= @setting.try(:id) %>" data-url="<%= save_admin_settings_path({:format => 'json'}) %>" data-title="Enter facebook url" data-name='setting[facebook_url]' data-value="<%= @setting.try(:value).to_s %>"><%= @setting.try(:value).to_s %></span>
+<span class="editable" data-type="textarea" data-pk="<%= @setting.try(:id) %>" data-url="<%= save_admin_settings_path({:format => 'json'}) %>" data-title="<%= t(:title_facebook_popup) %>" data-name='setting[facebook_url]' data-value="<%= @setting.try(:value).to_s %>"><%= @setting.try(:value).to_s %></span>
 

@@ -27,9 +27,4 @@ class Admin::PagesController < PagesController
     @page = 'gallery'
   end
 
-  def references
-    super
-    @page = 'references'
-  end
-
 end

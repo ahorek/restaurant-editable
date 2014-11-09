@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default" id="top_nav" role="navigation">
   <div class="container">
     <div class="top_logo">
       <div><%= link_to(content_tag(:div, '', :class => 'center-block').html_safe, root_path, :title => '') %></div>
@@ -15,24 +15,20 @@
       <%= link_to t(:title_administration), admin_path, :class => "navbar-brand" %>
     </div>
 
+    <div class="floatright">
+      <%= render :partial => 'layouts/application/languages' %>
+    </div>
+
     <div class="collapse navbar-collapse" id="baseapp-navbar-collapse-admin-menu">
-      <div class="floatleft">
-        <ul class="nav navbar-nav">
-          <li><%= link_to(t(:title_users), admin_users_path) %></li>
-          <li><%= link_to(t(:title_home), index_admin_pages_path) %></li>
-          <li><%= link_to(t(:title_about), about_admin_pages_path) %></li>
-          <li><%= link_to(t(:title_contact), contact_admin_pages_path) %></li>
-          <li><%= link_to(t(:title_gallery), gallery_admin_pages_path) %></li>
-          <li><%= link_to(t(:title_references), references_admin_pages_path) %></li>
-          <li><%= link_to(t(:title_facebook), facebook_admin_pages_path) %></li>
-          <li><%= link_to(t(:title_back), root_path) %></li>
-        </ul>
-      </div>
-
-      <div class="floatright">
-        <%= render :partial => 'layouts/application/languages' %>
-      </div>
-
+      <ul class="nav navbar-nav">
+        <li><%= link_to(t(:title_users), admin_users_path) %></li>
+        <li><%= link_to(t(:title_home), index_admin_pages_path) %></li>
+        <li><%= link_to(t(:title_about), about_admin_pages_path) %></li>
+        <li><%= link_to(t(:title_contact), contact_admin_pages_path) %></li>
+        <li><%= link_to(t(:title_gallery), gallery_admin_pages_path) %></li>
+        <li><%= link_to(t(:title_facebook), facebook_admin_pages_path) %></li>
+        <li><%= link_to(t(:title_back), root_path) %></li>
+      </ul>
     </div>
 
   </div>
