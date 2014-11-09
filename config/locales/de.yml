@@ -1,93 +1,93 @@
 de:
   date:
     abbr_day_names:
-    - Sun
-    - Mon
-    - Tue
-    - Wed
-    - Thu
-    - Fri
-    - Sat
+    - So
+    - Mo
+    - Di
+    - Mi
+    - Do
+    - Fr
+    - Sa
     abbr_month_names:
     -
     - Jan
     - Feb
-    - Mar
+    - Mär
     - Apr
-    - May
+    - Mai
     - Jun
     - Jul
     - Aug
     - Sep
-    - Oct
+    - Okt
     - Nov
-    - Dec
+    - Dez
     day_names:
-    - Sunday
-    - Monday
-    - Tuesday
-    - Wednesday
-    - Thursday
-    - Friday
-    - Saturday
+    - Sonntag
+    - Montag
+    - Dienstag
+    - Mittwoch
+    - Donnerstag
+    - Freitag
+    - Samstag
     formats:
-      default: ! '%Y-%m-%d'
-      long: ! '%B %d, %Y'
-      short: ! '%b %d'
+      default: ! '%d.%m.%Y'
+      long: ! '%e. %B %Y'
+      short: ! '%e. %b'
     month_names:
     -
-    - January
-    - February
-    - March
+    - Januar
+    - Februar
+    - März
     - April
-    - May
-    - June
-    - July
+    - Mai
+    - Juni
+    - Juli
     - August
     - September
-    - October
+    - Oktober
     - November
-    - December
+    - Dezember
     order:
-    - :year
-    - :month
     - :day
+    - :month
+    - :year
   datetime:
     distance_in_words:
       about_x_hours:
-        one: about 1 hour
-        other: about %{count} hours
+        one: etwa 1 Stunde
+        other: etwa %{count} Stunden
       about_x_months:
-        one: about 1 month
-        other: about %{count} months
+        one: etwa 1 Monat
+        other: etwa %{count} Monate
       about_x_years:
-        one: about 1 year
-        other: about %{count} years
+        one: etwa 1 Jahr
+        other: etwa %{count} Jahre
       almost_x_years:
-        one: almost 1 year
-        other: almost %{count} years
-      half_a_minute: half a minute
+        one: fast 1 Jahr
+        other: fast %{count} Jahre
+      half_a_minute: eine halbe Minute
       less_than_x_minutes:
-        one: less than a minute
-        other: less than %{count} minutes
+        one: weniger als 1 Minute
+        other: weniger als %{count} Minuten
       less_than_x_seconds:
-        one: less than 1 second
-        other: less than %{count} seconds
+        one: weniger als 1 Sekunde
+        other: weniger als %{count} Sekunden
       over_x_years:
-        one: over 1 year
-        other: over %{count} years
+        one: mehr als 1 Jahr
+        other: mehr als %{count} Jahre
       x_days:
-        one: 1 day
-        other: ! '%{count} days'
+        one: 1 Tag
+        other: ! '%{count} Tage'
       x_minutes:
-        one: 1 minute
-        other: ! '%{count} minutes'
+        one: 1 Minute
+        other: ! '%{count} Minuten'
       x_months:
-        one: 1 month
-        other: ! '%{count} months'
+        one: 1 Monat
+        other: ! '%{count} Monate'
       x_seconds:
-        one: 1 second
-        other: ! '%{count} seconds'
+        one: 1 Sekunde
+        other: ! '%{count} Sekunden'
     prompts:
       day: Day
       hour: Hour
@@ -151,7 +151,7 @@ de:
         separator: .
         significant: false
         strip_insignificant_zeros: false
-        unit: $
+        unit: €
     format:
       delimiter: ! ','
       precision: 3
