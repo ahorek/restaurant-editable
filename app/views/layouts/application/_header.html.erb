@@ -1,5 +1,9 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
+    <div class="top_logo">
+      <div><%= link_to(content_tag(:div, '', :class => 'center-block').html_safe, root_path, :title => '') %></div>
+    </div>
+    <div class="clear"></div>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#baseapp-navbar-collapse-menu">
         <span class="sr-only"><%= t(:toggle_navigation) %></span>
