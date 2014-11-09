@@ -35,11 +35,13 @@ ActiveRecord::Schema.define(version: 20140711240114) do
 
   create_table "templates", force: true do |t|
     t.string   "language",                       null: false
+    t.string   "page",                           null: false
     t.text     "description", limit: 2147483647
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "page",                           null: false
   end
+
+  add_index "templates", ["language", "page"], name: "index_templates_on_language_and_page", unique: true, using: :btree
 
   create_table "users", force: true do |t|
     t.string   "firstname",              default: "", null: false
