@@ -296,6 +296,7 @@ pl:
   field_firstname: Firstname
   field_lastname: Lastname
   title_remember_me: Remember me
+  title_facebook_popup: Enter facebook url
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:

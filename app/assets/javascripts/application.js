@@ -4,7 +4,7 @@
 //= require ckeditor-jquery
 
 function initEditable() {
-    $.fn.editable.defaults.mode = 'inline';
+    $.fn.editable.defaults.mode = 'popup';
     $('.editable').each(function (_, o) {
         $(o).editable(
                 {
