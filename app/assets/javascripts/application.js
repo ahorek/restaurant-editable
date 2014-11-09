@@ -8,6 +8,7 @@ function initEditable() {
     $('.editable').each(function (_, o) {
         $(o).editable(
                 {
+                    placement: 'top',
                     ajaxOptions: {
                         type: 'PUT'
                     },

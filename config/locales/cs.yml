@@ -297,6 +297,7 @@ cs:
   field_lastname: Příjmení
   title_remember_me: Zapamatovat
   title_facebook_popup: Vložte url facebooku
+  title_wififree: Wifi Free
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
