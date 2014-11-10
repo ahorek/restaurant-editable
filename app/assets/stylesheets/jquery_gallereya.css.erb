@@ -88,7 +88,7 @@
                 display: block;
 
                 border: none;
-                background: url('../assets/galereya/galereya-arrow_down.png') no-repeat 90% 50%;
+                background: url(<%= asset_data_uri 'galereya/galereya-arrow_down.png'%>) no-repeat 90% 50%;
                 background-size: 15px 10px;
             }
 
@@ -97,7 +97,7 @@
         }
 
             .galereya-cats.open .galereya-cats-item:first-child {
-                background: url('../assets/galereya/galereya-arrow_up.png') no-repeat 90% 45%;
+                background: url(<%= asset_data_uri 'galereya/galereya-arrow_up.png'%>) no-repeat 90% 45%;
                 background-size: 15px 10px;
             }
 
@@ -251,8 +251,8 @@
             transition: opacity .3s ease-out;
         }
 
-        .galereya-slider-nav.left { left: 0; background-image: url(../assets/galereya/galereya-arrow_prev.png); }
-        .galereya-slider-nav.right { right: 0; background-image: url(../assets/galereya/galereya-arrow_next.png); }
+        .galereya-slider-nav.left { left: 0; background-image: url(<%= asset_data_uri 'galereya/galereya-arrow_prev.png'%>); }
+        .galereya-slider-nav.right { right: 0; background-image: url(<%= asset_data_uri 'galereya/galereya-arrow_next.png'%>); }
 
         .galereya-slider-nav:active {
             opacity: 0.5;
@@ -313,16 +313,16 @@
             top: 0;
             left: 0;
 
-            background-image: url('../assets/galereya/galereya-close.png')
+            background-image: url(<%= asset_data_uri 'galereya/galereya-arrow_next.png'%>'../assets/galereya/galereya-close.png')
         }
         .galereya-slider-play {
             top: 0;
             right: 0;
 
-            background-image: url('../assets/galereya/galereya-play.png');
+            background-image: url(<%= asset_data_uri 'galereya/galereya-play.png'%>);
         }
         .galereya-slider-play.pause {
-            background-image: url('../assets/galereya/galereya-pause.png');
+            background-image: url(<%= asset_data_uri 'galereya/galereya-pause.png'%>);
         }
 
         .galereya-slider-container {
@@ -344,7 +344,7 @@
 
                 text-align: center;
 
-                background: #1a1a1a url('../assets/galereya/black_lozenge.png');
+                background: #1a1a1a url(<%= asset_data_uri 'galereya/black_lozenge.png'%>);
                 background-size: 38px 38px;
 
                 -webkit-box-shadow: 0px 0px 20px 4px #000;
@@ -366,7 +366,7 @@
                     height: 12px;
 
                     opacity: 0.2;
-                    background: url('../assets/galereya/galereya-slider-loader.gif') no-repeat center;
+                    background: url(<%= asset_data_uri 'galereya/galereya-slider-loader.gif'%>) no-repeat center;
                 }
 
                 .galereya-slide-img {
@@ -391,22 +391,22 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi){
     .galereya-slider-close {
-        background-image: url('../assets/galereya/galereya-close@2x.png');
+        background-image: url(<%= asset_data_uri 'galereya/galereya-close@2x.png'%>);
     }
 
     .galereya-slider-play {
-        background-image: url('../assets/galereya/galereya-play@2x.png');
+        background-image: url(<%= asset_data_uri 'galereya/galereya-play@2x.png'%>);
     }
 
     .galereya-slider-play.pause {
-        background-image: url('../assets/galereya/galereya-pause@2x.png');
+        background-image: url(<%= asset_data_uri 'galereya/galereya-pause@2x.png'%>);
     }
 
-    .galereya-slider-nav.left { background-image: url('../assets/galereya/galereya-arrow_prev@2x.png'); }
-    .galereya-slider-nav.right { background-image: url('../assets/galereya/galereya-arrow_next@2x.png'); }
+    .galereya-slider-nav.left { background-image: url(<%= asset_data_uri 'galereya/galereya-arrow_prev@2x.png'%>); }
+    .galereya-slider-nav.right { background-image: url(<%= asset_data_uri 'galereya/galereya-arrow_next@2x.png'%>); }
 
     .galereya-slider-slide {
-        background-image: url('../assets/galereya/black_lozenge_@2X.png');
+        background-image: url(<%= asset_data_uri 'galereya/black_lozenge_@2X.png'%>);
     }
 }
 

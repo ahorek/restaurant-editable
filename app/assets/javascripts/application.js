@@ -1,7 +1,10 @@
 //= require jquery
 //= require jquery_ujs
-//= require cocoon
 //= require ckeditor-jquery
+//= require bootstrap
+//= require bootstrap_editable
+//= require jquery_galereya
+//= require jquery_ui
 
 function initEditable() {
     $.fn.editable.defaults.mode = 'popup';

@@ -3,6 +3,10 @@
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
+ *= require_bootstrap
+ *= require_bootstrap_patch
+ *= require_jquery_ui
+ *= require_jquery_galereya
  *= require_tree .
 */
 
@@ -45,10 +49,10 @@
 }
 .top_logo > div {
     height: 344px;
-    background: url("/assets/title_logo.jpg") no-repeat center;
+    background: url(<%= asset_data_uri 'title_logo.jpg'%>) no-repeat center;
 }
 #top_nav, body {
-    background: #2B0E0E url("/assets/top_nav_background.jpg");
+    background: #2B0E0E url(<%= asset_data_uri 'top_nav_background.jpg'%>);
 }
 .bottom_buttons ul li a > img {
     width: 32px;
@@ -56,6 +60,6 @@
 }
 @media (max-width:760px) {
     .top_logo a > div {
-        //background: url("/assets/title_logo_mobile.jpg") no-repeat center;
+        //background: url(image_path('title_logo_mobile.jpg')) no-repeat center;
     }
 }

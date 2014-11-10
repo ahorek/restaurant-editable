@@ -14,6 +14,20 @@ namespace :application do
     end
   end
 
+  task non_digested: :environment do
+    assets = Dir.glob(File.join(Rails.root, 'public/assets/gallery/**/*'))
+    regex = /(-{1}[a-z0-9]{32}*\.{1}){1}/
+    assets.each do |file|
+      next if File.directory?(file) || file !~ regex
+
+      source = file.split('/')
+      source.push(source.pop.gsub(regex, '.'))
+
+      non_digested = File.join(source)
+      FileUtils.cp(file, non_digested)
+    end
+  end
+
   desc <<-END_DESC
     Example:
       bundle exec rake application:install RAILS_ENV=production
@@ -30,6 +44,8 @@ namespace :application do
     Rake::Task['db:migrate'].invoke
     puts 'Invoking assets:precompile...'
     Rake::Task['assets:precompile'].invoke
+    puts 'Invoking application:non_digest...'
+    Rake::Task['application:non_digested'].invoke
     puts 'Invoking application:clear_cache...'
     Rake::Task['application:clear_cache'].invoke
   end

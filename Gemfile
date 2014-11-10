@@ -11,7 +11,6 @@ gem "kaminari"
 gem "ransack"
 gem "dynamic_form"
 gem "tzinfo-data"
-gem "cocoon"
 gem "sass"
 gem "ckeditor_rails"
 
