@@ -1,5 +1,6 @@
-<div class="floatright bottom_buttons hidden-print">
-  <ul class="nav navbar-nav">
+<div class="clear"></div>
+<div class="navbar-fixed-bottom bottom_buttons hidden-print">
+  <ul class="nav navbar-nav pull-right">
     <% if (fb = Setting.where(:name => 'facebook_url').first.try(:value)).present? %>
       <li><%= link_to(image_tag('icon_facebook.png', :title => t(:title_facebook)), fb) %></li>
     <% end %>

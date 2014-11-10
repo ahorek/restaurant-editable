@@ -18,7 +18,7 @@
     font-size: 20px;
     display: none;
 }
-@media (max-width:760px) {
+@media (max-width:768px) {
     .navbar-header a.navbar-brand {
         display: block;
     }
@@ -26,7 +26,7 @@
 .navbar-default .navbar-nav .togglable {
     display: block;
 }
-@media (max-width:760px) {
+@media (max-width:768px) {
     .navbar-default .navbar-nav .togglable {
         display: none;
     }
