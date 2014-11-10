@@ -207,7 +207,7 @@ cs:
     pm: odp.
   title_account_settings: Nastavení účtu
   title_sign_out: Odhlásit se
-  title_home: Úvod
+  title_home: Akce
   title_sign_in: Přihlásit se
   title_register: Registrace
   title_welcome: Vítejte
@@ -297,6 +297,8 @@ cs:
   title_remember_me: Zapamatovat
   title_facebook_popup: Vložte url facebooku
   title_wififree: Wifi Free
+  label_menu_sublinks: Menu pododkazy
+  title_menu_sublinks_popup: 'Zadejte pododkazy menu, např: ID/NÁZEV,ID/NÁZEV'
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:

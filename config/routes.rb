@@ -13,7 +13,7 @@ BaseApp::Application.routes.draw do
     resources :users
     resources :pages do
       collection do
-        get 'facebook', :as => 'facebook'
+        get 'settings', :as => 'settings'
         get 'index', :as => 'index'
         get 'about', :as => 'about'
         get 'contact', :as => 'contact'

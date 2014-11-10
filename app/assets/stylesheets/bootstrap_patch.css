@@ -1,42 +1,55 @@
 .navbar-default .navbar-nav > li > a {
-    color: black;
+    color: white;
     font-size: 20px;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 20px;
 }
 .navbar-header a.navbar-brand {
-    color: black;
+    color: white;
     font-size: 20px;
     display: none;
 }
 @media (max-width:760px) {
     .navbar-header a.navbar-brand {
-        color: black;
+        color: white;
         font-size: 20px;
         display: block;
     }
 }
 .navbar-header a.navbar-brand:hover,
 .navbar-header a.navbar-brand:focus {
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 20px;
 }
 .navbar-default .navbar-toggle {
-    border-color: black;
+    border-color: white;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: black;
+    background-color: white;
 }
 .navbar-default .navbar-collapse {
-    border-color: black;
+    border-color: white;
 }
 .navbar-default .navbar-form {
+    border-color: white;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+}
+.dropdown-menu {
     border-color: black;
+    background-color: #2B0E0E;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: white;
+    background-color: #6A2222;
+    font-weight: bold;
 }
 .navbar .navbar-nav {
   display: inline-block;

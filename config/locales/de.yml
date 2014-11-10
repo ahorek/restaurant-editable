@@ -202,12 +202,12 @@ de:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: pm
-  title_account_settings: Account settings
-  title_sign_out: Sign out
-  title_home: Home
-  title_sign_in: Sign In
+  title_account_settings: Kontoeinstellungen
+  title_sign_out: Austragen
+  title_home: Geschehen
+  title_sign_in: Einloggen
   title_register: Register
-  title_welcome: Welcome
+  title_welcome: Willkommen
   languages:
     cs: Čeština
     en: English
@@ -294,6 +294,8 @@ de:
   title_remember_me: Mich erinnern
   title_facebook_popup: Enter facebook url
   title_wififree: Wifi Free
+  label_menu_sublinks: Menu sublinks
+  title_menu_sublinks_popup: 'Enter menu sublinks, ex: ID/TITLE,ID/TITLE'
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:

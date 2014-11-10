@@ -22,7 +22,22 @@
     <div class="collapse navbar-collapse" id="baseapp-navbar-collapse-menu">
       <ul class="nav navbar-nav">
         <li><%= link_to t(:title_about), about_pages_path %></li>
-        <li><%= link_to t(:title_menu), menus_pages_path %></li>
+
+        <% if (sl = Setting.where(:name => 'menu_sublinks').first.try(:value)).present? %>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= t(:title_menu) %><span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <% submenus = sl.split(',') %>
+              <% submenus.each do |submenu| %>
+                <% sm = submenu.split('/') %>
+                <li><a href="#{sm.first}"><%= sm.last %></a></li>
+              <% end %>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to t(:title_menu), menus_pages_path %></li>
+        <% end %>
+
         <li><%= link_to t(:title_gallery), gallery_pages_path %></li>
         <li><%= link_to t(:title_contact), contact_pages_path %></li>
 
@@ -33,7 +48,7 @@
           <% end %>
           <li><%= link_to t(:title_sign_out), destroy_user_session_path %></li>
         <% else %>
-          <li><%= link_to t(:title_sign_in), new_user_session_path %></li>
+          <li><%#= link_to t(:title_sign_in), new_user_session_path %></li>
         <% end -%>
       </ul>
     </div>

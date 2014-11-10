@@ -207,7 +207,7 @@ pl:
     pm: po południu
   title_account_settings: Ustawenie konta
   title_sign_out: Wymeldować się
-  title_home: Wprowadzenie
+  title_home: Wydarzenia
   title_sign_in: Zalogować się
   title_register: Registracja
   title_welcome: Witamy
@@ -304,6 +304,8 @@ pl:
   title_remember_me: Remember me
   title_facebook_popup: Enter facebook url
   title_wififree: Wifi Free
+  label_menu_sublinks: Menu sublinks
+  title_menu_sublinks_popup: 'Enter menu sublinks, ex: ID/TITLE,ID/TITLE'
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:

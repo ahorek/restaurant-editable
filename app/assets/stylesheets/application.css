@@ -52,7 +52,11 @@
     background: url("/assets/title_logo.jpg") no-repeat center;
 }
 #top_nav {
-    background: url("/assets/top_nav_background.png");
+    background: #2B0E0E url("/assets/top_nav_background.jpg");
+}
+.bottom_buttons ul li a > img {
+    width: 32px;
+    height: 32px;
 }
 @media (max-width:760px) {
     .top_logo a > div {

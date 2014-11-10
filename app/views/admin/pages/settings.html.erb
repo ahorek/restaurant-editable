@@ -1,0 +1,8 @@
+<p>
+  <label><%= t(:label_facebook_link) %></label>
+  <span class="editable" data-type="textarea" data-pk="<%= @fb_setting.try(:id) %>" data-url="<%= save_admin_settings_path({:format => 'json'}) %>" data-title="<%= t(:title_facebook_popup) %>" data-name='setting[facebook_url]' data-value="<%= @fb_setting.try(:value).to_s %>"><%= @fb_setting.try(:value).to_s %></span>
+</p>
+<p>
+  <label><%= t(:label_menu_sublinks) %></label>
+  <span class="editable" data-type="textarea" data-pk="<%= @ms_setting.try(:id) %>" data-url="<%= save_admin_settings_path({:format => 'json'}) %>" data-title="<%= t(:title_menu_sublinks_popup) %>" data-name='setting[menu_sublinks]' data-value="<%= @ms_setting.try(:value).to_s %>"><%= @ms_setting.try(:value).to_s %></span>
+</p>

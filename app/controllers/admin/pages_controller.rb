@@ -3,8 +3,9 @@ class Admin::PagesController < PagesController
   before_filter :require_admin
   layout "admin"
 
-  def facebook
-    @setting = Setting.where(:name => 'facebook_url').first
+  def settings
+    @fb_setting = Setting.where(:name => 'facebook_url').first
+    @ms_setting = Setting.where(:name => 'menu_sublinks').first
   end
 
   def index
