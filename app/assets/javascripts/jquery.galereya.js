@@ -56,7 +56,7 @@
             cellFadeInSpeed: 200,
             noCategoryName: 'all',
             disableSliderOnClick: false,
-            size: 100,
+            size: 200,
             load: function (next) {
                 next();
             },
