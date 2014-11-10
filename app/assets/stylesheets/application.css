@@ -43,7 +43,7 @@
 .table-bordered, table-striped {
     color: black;
 }
-.top_logo a > div {
+.top_logo > div {
     height: 344px;
     background: url("/assets/title_logo.jpg") no-repeat center;
 }
