@@ -34,24 +34,20 @@
 .hidden {
     display: none;
 }
-.navbar-nav.languages > li {
-    display: inline-block;
-}
-.navbar-nav.languages > li > a {
-    padding: 3px 3px;
-}
-.navbar-nav.languages > li > a > img {
-    width: 15px;
-    height: 15px;
-}
 .table-striped > tbody > tr:nth-child(2n+1) > td.red, .table-bordered > tbody > tr > td.red {
     background-color: #E60000;
+}
+.table-bordered > tbody > tr > td, .table-bordered > thead > tr > th {
+    background-color: #FFFFFF;
+}
+.table-bordered, table-striped {
+    color: black;
 }
 .top_logo a > div {
     height: 344px;
     background: url("/assets/title_logo.jpg") no-repeat center;
 }
-#top_nav {
+#top_nav, body {
     background: #2B0E0E url("/assets/top_nav_background.jpg");
 }
 .bottom_buttons ul li a > img {

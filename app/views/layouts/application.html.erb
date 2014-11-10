@@ -9,11 +9,13 @@
 
   <body>
     <%= render "layouts/application/header" %>
-    <div class="container">
-      <%= render "layouts/application/flash_messages" %>
-      <%= yield %>
-      <%= render 'layouts/bottom_buttons' %>
-      <div id="ajax-modal" title=""><p></p></div>
+    <div id="content">
+      <div class="container">
+        <%= render "layouts/application/flash_messages" %>
+        <%= yield %>
+        <%= render 'layouts/bottom_buttons' %>
+        <div id="ajax-modal" title=""><p></p></div>
+      </div>
     </div>
   </body>
 </html>

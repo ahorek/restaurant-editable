@@ -208,7 +208,7 @@ cs:
   title_account_settings: Nastavení účtu
   title_sign_out: Odhlásit se
   title_settings: Nastavení
-  title_home: Akce
+  title_index: Akce
   title_sign_in: Přihlásit se
   title_register: Registrace
   title_welcome: Vítejte
@@ -309,6 +309,7 @@ cs:
         password: Heslo
         password_confirmation: Potvrzení hesla
         current_password: Současné heslo
+  title_editation: Editace
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:

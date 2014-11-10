@@ -1,3 +1,7 @@
+<div class="page-header">
+  <h2><%= t(:title_editation) %> <%= t(:"title_settings") %></h2>
+</div>
+
 <p>
   <label><%= t(:label_facebook_link) %></label>
   <span class="editable" data-type="textarea" data-pk="<%= @fb_setting.try(:id) %>" data-url="<%= save_admin_settings_path({:format => 'json'}) %>" data-title="<%= t(:title_facebook_popup) %>" data-name='setting[facebook_url]' data-value="<%= @fb_setting.try(:value).to_s %>"><%= @fb_setting.try(:value).to_s %></span>

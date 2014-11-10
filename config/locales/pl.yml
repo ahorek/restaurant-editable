@@ -208,7 +208,7 @@ pl:
   title_account_settings: Ustawenie konta
   title_sign_out: Wymeldować się
   title_settings: Ustawienia
-  title_home: Wydarzenia
+  title_index: Wydarzenia
   title_sign_in: Zalogować się
   title_register: Registracja
   title_welcome: Witamy
@@ -316,6 +316,7 @@ pl:
         password: Hasło
         password_confirmation: Potwierdzenie hasła
         current_password: Aktualne hasło
+  title_editation: Edycja
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
