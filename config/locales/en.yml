@@ -297,6 +297,15 @@ en:
   title_wififree: Wifi Free
   label_menu_sublinks: Menu sublinks
   title_menu_sublinks_popup: 'Enter menu sublinks, ex: ID/TITLE,ID/TITLE'
+  helpers:
+    label:
+      user:
+        firstname: Firstname
+        lastname: Lastname
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        current_password: Current password
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:

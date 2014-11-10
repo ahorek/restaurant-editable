@@ -240,13 +240,13 @@ pl:
   notice_created: Successfully created
   notice_user_updated: User successfully updated
   notice_updated: Successfully updated
-  notice_user_deleted: User deleted
-  alert_only_admin_can_register_new_user: Only admin can register new user
-  header_language: Language
-  header_updated: Updated
+  notice_user_deleted: Użytkownik usunięty
+  alert_only_admin_can_register_new_user: Tylko administrator może zarejestrować nowego użytkownika
+  header_language: Język
+  header_updated: Aktualizowany
   header_show: Show
-  header_edit: Edit
-  title_editing_user: Editing user
+  header_edit: Edycja
+  title_editing_user: Edycja użytkownik
   are_you_sure: Are you sure?
   restaurant_name: Stylová restaurace
   toggle_navigation: Toggle navigation
@@ -269,8 +269,8 @@ pl:
   title_admin: Admin
   button_resend_confirmation_instructions: Resend confirmation instructions
   button_resend_unlock_instructions: Resend unlock instructions
-  button_create_account: Create an account
-  button_forgot_your_password: Forgot your password?
+  button_create_account: Załóż konto
+  button_forgot_your_password: Nie pamiętasz hasła?
   button_didnt_recieve_confirmation_instructions: Didn't receive confirmation instructions?
   button_didnt_recieve_unlock_instructions: Didn't receive unlock instructions?
   placeholder_enter_your_email: Enter your email
@@ -286,7 +286,7 @@ pl:
   email_confirmation_info: 'You can confirm your account email through the link below:'
   email_confirm_account: Confirm my account
   email_unlock_account: Unlock my account
-  placeholder_current_password: Current password
+  placeholder_current_password: Aktualne hasło
   new_password_comment: Leave blank if you don't want to change it.
   current_password_comment: We need your current password to confirm your changes.
   button_save_settings: Zachowaj ustawienia
@@ -297,16 +297,25 @@ pl:
   field_lastname: Nazwisko
   title_remember_me: Zapamiętaj mnie
   button_save_settings: Save settings
-  button_cancel_account: Cancel account
-  button_search: Search
+  button_cancel_account: Anuluj konto
+  button_search: Poszukiwanie
   button_create: Create
-  field_firstname: Firstname
-  field_lastname: Lastname
-  title_remember_me: Remember me
+  field_firstname: Nazwa
+  field_lastname: Nazwisko
+  title_remember_me: Zapamiętaj mnie
   title_facebook_popup: Enter facebook url
   title_wififree: Wifi Free
   label_menu_sublinks: Menu sublinks
   title_menu_sublinks_popup: 'Enter menu sublinks, ex: ID/TITLE,ID/TITLE'
+  helpers:
+    label:
+      user:
+        firstname: Nazwa
+        lastname: Nazwisko
+        email: Email
+        password: Hasło
+        password_confirmation: Potwierdzenie hasła
+        current_password: Aktualne hasło
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:

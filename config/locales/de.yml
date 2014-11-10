@@ -255,8 +255,8 @@ de:
   placeholder_firstname: Geben Sie den Vornamen
   placeholder_lastname: Geben Sie den Nachnammen
   placeholder_email: Geben Sie den E-Mail
-  placeholder_password: Kenword
-  placeholder_confirm_password: Kenword bestatigen
+  placeholder_password: Kennword
+  placeholder_confirm_password: Kennword bestatigen
   button_new_user: Neuer Benutzer
   placeholder_search_by_email: Suche per E-Mail
   title_signed_up: Registriert
@@ -267,7 +267,7 @@ de:
   button_resend_confirmation_instructions: Erneutes Senden
   button_resend_unlock_instructions: Erneutes Senden Entriegelungsbefel
   button_create_account: Ein Konto erstellen
-  button_forgot_your_password: Kenword vergessen?
+  button_forgot_your_password: Kennword vergessen?
   button_didnt_recieve_confirmation_instructions: Haben Sie keine Bastätigung uber eine Anleitung?
   button_didnt_recieve_unlock_instructions: Anleitung nicht empfangen?
   placeholder_enter_your_email: Geben Sie einfach Ihre E-Mail
@@ -285,7 +285,7 @@ de:
   email_unlock_account: Schalte mein Konto
   placeholder_current_password: Aktuelles Kennword
   new_password_comment: Leer lassen,wenn Sie nicht wollen es ändern.
-  current_password_comment: Wir brauchen Ihre Kenword um Ihre Anderungen zu bestätigen.
+  current_password_comment: Wir brauchen Ihre Kennword um Ihre Anderungen zu bestätigen.
   button_save_settings: Einstellungen speichern
   button_cancel_account: Konto löschen
   button_search: Suchen
@@ -297,6 +297,15 @@ de:
   title_wififree: Wifi Free
   label_menu_sublinks: Menu sublinks
   title_menu_sublinks_popup: 'Enter menu sublinks, ex: ID/TITLE,ID/TITLE'
+  helpers:
+    label:
+      user:
+        firstname: Vorname
+        lastname: Nachname
+        email: Email
+        password: Kennwort
+        password_confirmation: Passwortbestätigung
+        current_password: Aktuelles Passwort
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:

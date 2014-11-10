@@ -300,6 +300,15 @@ cs:
   title_wififree: Wifi Free
   label_menu_sublinks: Menu pododkazy
   title_menu_sublinks_popup: 'Zadejte pododkazy menu, např: ID/NÁZEV,ID/NÁZEV'
+  helpers:
+    label:
+      user:
+        firstname: Jméno
+        lastname: Příjmení
+        email: Email
+        password: Heslo
+        password_confirmation: Potvrzení hesla
+        current_password: Současné heslo
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
