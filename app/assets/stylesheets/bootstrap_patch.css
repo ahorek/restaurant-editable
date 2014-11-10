@@ -15,9 +15,15 @@
 }
 @media (max-width:760px) {
     .navbar-header a.navbar-brand {
-        color: white;
-        font-size: 20px;
         display: block;
+    }
+}
+.navbar-default .navbar-nav .togglable {
+    display: block;
+}
+@media (max-width:760px) {
+    .navbar-default .navbar-nav .togglable {
+        display: none;
     }
 }
 .navbar-header a.navbar-brand:hover,
