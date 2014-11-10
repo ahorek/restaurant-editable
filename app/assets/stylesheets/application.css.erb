@@ -58,6 +58,7 @@
     width: 32px;
     height: 32px;
 }
+
 body {
   padding-top: 400px;
 }
@@ -67,5 +68,13 @@ body {
     }
     body {
       padding-top: 436px;
+    }
+}
+@media print {
+    body {
+      padding-top: 0px;
+    }
+    #content .container {
+      margin-left: 0px;
     }
 }
