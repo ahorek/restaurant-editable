@@ -56,6 +56,6 @@
 }
 @media (max-width:760px) {
     .top_logo a > div {
-        background: url("/assets/title_logo_mobile.jpg") no-repeat center;
+        //background: url("/assets/title_logo_mobile.jpg") no-repeat center;
     }
 }

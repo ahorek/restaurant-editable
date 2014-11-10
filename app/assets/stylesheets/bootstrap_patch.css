@@ -40,6 +40,10 @@
 .navbar-default .navbar-toggle {
     border-color: white;
 }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #A34747;
+}
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
 }
@@ -75,6 +79,12 @@
 }
 .navbar-nav.languages > li > a {
     padding: 3px 3px;
+}
+.bottom_buttons > .navbar-nav > li {
+    display: inline-block;
+}
+.bottom_buttons > .navbar-nav > li > a {
+    padding: 10px 10px;
 }
 .navbar-nav.languages > li > a > img {
     width: 15px;
