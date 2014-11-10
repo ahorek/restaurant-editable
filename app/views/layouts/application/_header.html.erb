@@ -31,7 +31,7 @@
               <% submenus = sl.split(',') %>
               <% submenus.each do |submenu| %>
                 <% sm = submenu.split('/') %>
-                <li><a href="<%= sm.first %>"><%= sm.last %></a></li>
+                <li><a href="<%= menus_pages_path %>#<%= sm.first %>"><%= sm.last %></a></li>
               <% end %>
             </ul>
           </li>

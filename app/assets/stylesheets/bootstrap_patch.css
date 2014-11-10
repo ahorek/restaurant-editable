@@ -86,6 +86,10 @@
 .bottom_buttons > .navbar-nav > li > a {
     padding: 10px 10px;
 }
+.bottom_buttons > .navbar-nav > li > a:hover,
+.bottom_buttons > .navbar-nav > li > a:focus {
+    background-color: #6A2222;
+}
 .navbar-nav.languages > li > a > img {
     width: 15px;
     height: 15px;
