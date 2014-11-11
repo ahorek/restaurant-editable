@@ -49,28 +49,30 @@
 }
 .top_logo > div {
     height: 344px;
-    background: url(<%= asset_data_uri 'title_logo.jpg'%>) no-repeat center;
+    background: url(<%= asset_data_uri 'top_logo.png'%>) no-repeat center;
 }
 #top_nav, body {
     background: #2B0E0E url(<%= asset_data_uri 'top_nav_background.jpg'%>);
 }
 #top_nav, .navbar-fixed-bottom.bottom_buttons {
-    z-index: 1;
+    z-index: 100;
 }
-.bottom_buttons ul li a > img {
-    width: 32px;
-    height: 32px;
+#top_nav {
+    max-height: 395px;
 }
-
 body {
-  padding-top: 400px;
+    padding-top: 400px;
 }
 @media (max-width:768px) {
-    .top_logo a > div {
-        //background: url(image_path('title_logo_mobile.jpg')) no-repeat center;
+    .top_logo > div {
+        background: url(<%= asset_data_uri 'top_logo_mobile.png'%>) no-repeat center;
+        height: 60px;
     }
     body {
-      padding-top: 436px;
+      padding-top: 200px;
+    }
+    #top_nav {
+      max-height: 200px;
     }
 }
 @media print {

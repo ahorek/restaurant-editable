@@ -5,37 +5,45 @@
 }
 .navbar-default .navbar-nav > li > a {
     color: white;
-    font-size: 20px;
+    font-size: 1.2vw;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.2vw;
 }
 .navbar-header a.navbar-brand {
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     display: none;
-}
-@media (max-width:768px) {
-    .navbar-header a.navbar-brand {
-        display: block;
-    }
 }
 .navbar-default .navbar-nav .togglable {
     display: block;
 }
 @media (max-width:768px) {
+    .navbar-header a.navbar-brand {
+        display: block;
+    }
     .navbar-default .navbar-nav .togglable {
         display: none;
+    }
+    .bottom_buttons > ul.navbar-nav.languages {
+        padding-left: 15px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        font-size: 20px;
+    }
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        font-size: 20px;
     }
 }
 .navbar-header a.navbar-brand:hover,
 .navbar-header a.navbar-brand:focus {
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
 }
 .navbar-default .navbar-toggle {
     border-color: white;
@@ -74,25 +82,26 @@
 .navbar .navbar-collapse {
   text-align: center;
 }
-.navbar-nav.languages > li {
-    display: inline-block;
-}
-.navbar-nav.languages > li > a {
-    padding: 3px 3px;
+.bottom_buttons > ul.navbar-nav.languages > li > a {
+    padding: 8px 5px;
 }
 .bottom_buttons > .navbar-nav > li {
     display: inline-block;
 }
-.bottom_buttons > .navbar-nav > li > a {
+.bottom_buttons > .navbar-nav.buttons > li > a {
     padding: 10px 10px;
 }
 .bottom_buttons > .navbar-nav > li > a:hover,
 .bottom_buttons > .navbar-nav > li > a:focus {
     background-color: #6A2222;
 }
-.navbar-nav.languages > li > a > img {
-    width: 15px;
-    height: 15px;
+.bottom_buttons > ul.navbar-nav.languages > li > a > img {
+    width: 20px;
+    height: 20px;
+}
+.bottom_buttons > ul.navbar-nav.buttons > li a > img {
+    width: 32px;
+    height: 32px;
 }
 body {
     color: white;

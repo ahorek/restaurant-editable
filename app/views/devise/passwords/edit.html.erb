@@ -11,7 +11,7 @@
   <div class="form-group">
     <%= f.label :password, t(:title_new_password), :class => "col-sm-2 control-label" %>
     <div class="col-sm-4">
-      <%= f.password_field :password, :class => "form-control", :placeholder => t(:title_enter_your_new_password) %>
+      <%= f.password_field :password, :autocomplete => 'off', :class => "form-control", :placeholder => t(:title_enter_your_new_password) %>
     </div>
   </div>
 
