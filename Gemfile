@@ -13,7 +13,7 @@ gem "dynamic_form"
 gem "tzinfo-data"
 gem "sass"
 gem "ckeditor_rails"
-
+gem "thread_safe"
 
 group :test, :development do
   gem "rspec-rails"
