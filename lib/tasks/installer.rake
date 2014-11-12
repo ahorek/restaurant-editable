@@ -16,7 +16,6 @@ namespace :application do
 
   task non_digested: :environment do
     assets = Dir.glob(File.join(Rails.root, 'public/assets/gallery/**/*'))
-    assets << File.join(Rails.root, 'public/assets/favicon*.ico')
     regex = /(-{1}[a-z0-9]{32}*\.{1}){1}/
     assets.each do |file|
       next if File.directory?(file) || file !~ regex
