@@ -20,7 +20,7 @@
         <li class="togglable"><%= link_to t(:title_index), root_path, :class => "navbar-brand" %></li>
         <li><%= link_to t(:title_about), about_pages_path %></li>
 
-        <% if (sl = Setting.where(:name => 'menu_sublinks').first.try(:value)).present? && !user_signed_in? %>
+        <% if (sl = Setting.where(:name => "menu_sublinks_#{I18n.locale}").first.try(:value)).present? && !user_signed_in? %>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= t(:title_menu) %><span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">

@@ -1,5 +1,7 @@
 module ApplicationHelper
 
+  include LanguagesHelper
+
   def sortable(column, title = nil)
     title ||= column.titleize
     css_class = (column == sort_column) ? "current #{sort_direction}" : nil
@@ -22,22 +24,4 @@ module ApplicationHelper
       end
     end
   end
-
-  def available_languages
-    [:cs, :en, :pl, :de]
-  end
-
-  def flag_file(lang)
-    case lang.to_s
-    when 'cs'
-      'flags/czech_flag.png'
-    when 'en'
-      'flags/english_flag.png'
-    when 'pl'
-      'flags/polish_flag.png'
-    when 'de'
-      'flags/german_flag.png'
-    end
-  end
-
 end

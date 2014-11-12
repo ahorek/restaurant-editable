@@ -21,24 +21,6 @@
 .navbar-default .navbar-nav .togglable {
     display: block;
 }
-@media (max-width:768px) {
-    .navbar-header a.navbar-brand {
-        display: block;
-    }
-    .navbar-default .navbar-nav .togglable {
-        display: none;
-    }
-    .bottom_buttons > ul.navbar-nav.languages {
-        padding-left: 15px;
-    }
-    .navbar-default .navbar-nav > li > a {
-        font-size: 20px;
-    }
-    .navbar-default .navbar-nav > li > a:hover,
-    .navbar-default .navbar-nav > li > a:focus {
-        font-size: 20px;
-    }
-}
 .navbar-header a.navbar-brand:hover,
 .navbar-header a.navbar-brand:focus {
     color: white;
@@ -108,4 +90,29 @@ body {
 }
 .popover-title {
     color: black;
+}
+@media (max-width:768px) {
+    .navbar-header a.navbar-brand {
+        display: block;
+    }
+    .navbar-default .navbar-nav .togglable {
+        display: none;
+    }
+    .bottom_buttons > ul.navbar-nav.languages {
+        padding-left: 15px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        font-size: 20px;
+    }
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        font-size: 20px;
+    }
+    .navbar-default .navbar-nav {
+        background-color: #2B0E0E;
+        width: 100%;
+    }
+    .navbar-default .navbar-nav li.dropdown.open a.dropdown-toggle {
+        background-color: #2B0E0E;
+    }
 }

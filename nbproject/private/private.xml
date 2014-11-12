@@ -5,6 +5,22 @@
         <group>
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/assets/stylesheets/bootstrap_editable.css.erb</file>
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/assets/stylesheets/jquery_gallereya.css.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/assets/stylesheets/bootstrap_patch.css</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/assets/stylesheets/application.css.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/_bottom_buttons.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/application.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/_header_scripts.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/lib/tasks/initializers.rake</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/lib/tasks/installer.rake</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/admin.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/application/_header.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/admin/_main_nav.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/devise/registrations/edit.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/devise/passwords/edit.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/devise/passwords/new.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/devise/mailer/reset_password_instructions.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/config/locales/cs.yml</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/devise/sessions/new.html.erb</file>
         </group>
     </open-files>
 </project-private>
