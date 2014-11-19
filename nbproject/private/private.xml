@@ -21,6 +21,12 @@
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/devise/mailer/reset_password_instructions.html.erb</file>
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/config/locales/cs.yml</file>
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/devise/sessions/new.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/helpers/application_helper.rb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/controllers/application_controller.rb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/admin/pages/settings.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/controllers/admin/pages_controller.rb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/helpers/languages_helper.rb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/assets/javascripts/application.js</file>
         </group>
     </open-files>
 </project-private>

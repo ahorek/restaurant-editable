@@ -25,7 +25,7 @@ file 'config/initializers/devise.rb' do
   File.open(path, 'w') do |f|
     f.write <<"EOF"
 Devise.setup do |config|
-  config.mailer_sender = "mail@domain.com"
+  config.mailer_sender = "stylova-restaurace.com"
   require 'devise/orm/active_record'
   config.case_insensitive_keys = [ :email ]
   config.stretches = 10

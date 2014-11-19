@@ -21,7 +21,7 @@ BaseApp::Application.configure do
 
   # Disable Rails's static asset server
   # In production, Apache or nginx will already do this
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -78,18 +78,4 @@ BaseApp::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
-
-  # mailer settings
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { :host => 'localhost' }
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.smtp_settings = {
-      address: 'test.cz',
-      port: '25',
-      domain: 'test.cz',
-      authentication: :login,
-      enable_starttls_auto: false,
-      user_name: 'test@test.cz',
-      password: 'test'
-  }
 end
