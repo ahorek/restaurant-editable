@@ -4,6 +4,7 @@ db/*.sqlite3
 log/*.log
 tmp/**/*
 config/database.yml
+config/additional_environment.rb
 vendor/bundle
 /Gemfile.local
 db/schema.rb
