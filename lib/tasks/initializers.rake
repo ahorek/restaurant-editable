@@ -29,7 +29,6 @@ Devise.setup do |config|
   require 'devise/orm/active_record'
   config.case_insensitive_keys = [ :email ]
   config.stretches = 10
-  config.email_regexp = /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   config.reset_password_within = 6.hours
   config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_APP_SECRET']
   config.secret_key = '#{secret}'
