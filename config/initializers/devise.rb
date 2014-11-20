@@ -1,5 +1,5 @@
 Devise.setup do |config|
-  config.mailer_sender = "stylova-restaurace.com"
+  config.mailer_sender = 'noreply@stylova-restaurace.com'
   require 'devise/orm/active_record'
   config.case_insensitive_keys = [ :email ]
   config.stretches = 10
