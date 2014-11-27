@@ -12,16 +12,16 @@
     font-weight: bold;
     font-size: 1.2vw;
 }
-.navbar-header a.navbar-brand {
+.navbar-default .navbar-nav .togglable {
+    display: block;
+}
+#top_nav a.navbar-brand {
     color: white;
     font-size: 24px;
     display: none;
 }
-.navbar-default .navbar-nav .togglable {
-    display: block;
-}
-.navbar-header a.navbar-brand:hover,
-.navbar-header a.navbar-brand:focus {
+#top_nav a.navbar-brand:hover,
+#top_nav a.navbar-brand:focus {
     color: white;
     font-weight: bold;
     font-size: 24px;
@@ -91,7 +91,7 @@ body {
     color: black;
 }
 @media (max-width:768px) {
-    .navbar-header a.navbar-brand {
+    #top_nav a.navbar-brand {
         display: block;
     }
     .navbar-default .navbar-nav .togglable {
@@ -115,3 +115,4 @@ body {
         background-color: #2B0E0E;
     }
 }
+

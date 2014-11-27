@@ -47,7 +47,7 @@
 .table-bordered, table-striped {
     color: black;
 }
-.top_logo > div {
+.top_logo span.top_logo_container {
     height: 140px;
     background: url(<%= asset_data_uri 'top_logo.png'%>) no-repeat center;
 }
@@ -64,7 +64,7 @@ body {
     padding-top: 210px;
 }
 @media (max-width:768px) {
-    .top_logo > div {
+    .top_logo span.top_logo_container {
         background: url(<%= asset_data_uri 'top_logo_mobile.png'%>) no-repeat center;
         height: 60px;
     }
