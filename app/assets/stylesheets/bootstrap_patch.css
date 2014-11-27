@@ -84,7 +84,9 @@
     width: 32px;
     height: 32px;
 }
-.bottom_text > ul.navbar-nav > li {
+.bottom_text {
+    text-align: center;
+    width: 60%;
     font-weight: bold;
     font-size: 16px;
 }

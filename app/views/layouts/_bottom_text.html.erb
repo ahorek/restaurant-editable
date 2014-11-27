@@ -1,9 +1,9 @@
-<div class="clear"></div>
-<div class="navbar navbar-fixed-bottom bottom_text hidden-print" style="text-align:center; margin: 0 auto; width:100%">
-  <ul class="nav navbar-nav">
-    <% if (text = Setting.where(:name => 'text_page_footer').first.try(:value)).present? %>
-      <li><%= text %></li>
-    <% end %>
-  </ul>
+<div class="navbar-fixed-bottom bottom_text hidden-print container">
+  <div class="row">
+    <div class="centered">
+      <% if (text = Setting.where(:name => 'text_page_footer').first.try(:value)).present? %>
+        <%= text %>
+      <% end %>
+    </div>
+  </div>
 </div>
-<div class="clear"></div>
