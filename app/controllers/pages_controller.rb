@@ -24,4 +24,8 @@ class PagesController < ApplicationController
     @templates = Template.where(:page => 'menu')
   end
 
+  def partners
+    @templates = Template.where(:page => 'partners')
+  end
+
 end

@@ -19,7 +19,7 @@ BaseApp::Application.routes.draw do
         get 'events', :as => 'events'
         get 'contact', :as => 'contact'
         get 'gallery', :as => 'gallery'
-        get 'references', :as => 'references'
+        get 'partners', :as => 'partners'
       end
     end
     resources :settings do
@@ -37,7 +37,7 @@ BaseApp::Application.routes.draw do
       get 'contact', :as => 'contact'
       get 'gallery', :as => 'gallery'
       get 'menu', :as => 'menus'
-      get 'references', :as => 'references'
+      get 'partners', :as => 'partners'
     end
   end
 

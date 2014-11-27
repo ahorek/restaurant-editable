@@ -43,4 +43,9 @@ class Admin::PagesController < PagesController
     @page = 'gallery'
   end
 
+  def partners
+    super
+    @page = 'partners'
+  end
+
 end
