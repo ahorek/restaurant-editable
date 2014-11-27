@@ -12,6 +12,16 @@
         data-value="<%= @fb_setting.try(:value).to_s %>"><%= @fb_setting.try(:value).to_s %></span>
 </p>
 
+<p>
+  <label><%= t(:label_page_footer) %></label>
+  <span class="editable"
+        data-type="textarea"
+        data-pk="<%= @fo_setting.try(:id) %>"
+        data-url="<%= save_admin_settings_path({:format => 'json'}) %>"
+        data-title="<%= t(:title_page_footer_popup) %>" data-name='setting[text_page_footer]'
+        data-value="<%= @fo_setting.try(:value).to_s %>"><%= @fo_setting.try(:value).to_s %></span>
+</p>
+
 <p><label><%= t(:label_menu_sublinks) %></label></p>
 <% available_languages.each do |lang| %>
   <p>
@@ -23,5 +33,19 @@
           data-title="<%= t(:title_menu_sublinks_popup) %>"
           data-name='setting[menu_sublinks_<%= lang.to_s %>]'
           data-value="<%= @ms_setting[lang].try(:value).to_s %>"><%= @ms_setting[lang].try(:value).to_s %></span>
+  </p>
+<% end %>
+
+<p><label><%= t(:label_gallery_sublinks) %></label></p>
+<% available_languages.each do |lang| %>
+  <p>
+    <%= image_tag flag_file(lang.to_s) %>
+    <span class="editable"
+          data-type="textarea"
+          data-pk="<%= @gs_setting[lang].try(:id) %>"
+          data-url="<%= save_admin_settings_path({:format => 'json'}) %>"
+          data-title="<%= t(:title_gallery_sublinks_popup) %>"
+          data-name='setting[gallery_sublinks_<%= lang.to_s %>]'
+          data-value="<%= @gs_setting[lang].try(:value).to_s %>"><%= @gs_setting[lang].try(:value).to_s %></span>
   </p>
 <% end %>

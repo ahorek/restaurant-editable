@@ -205,7 +205,8 @@ en:
   title_account_settings: Account settings
   title_sign_out: Sign out
   title_settings: Settings
-  title_index: Events
+  title_index: Home
+  title_events: Events
   title_sign_in: Sign In
   title_register: Register
   title_welcome: Welcome
@@ -307,6 +308,10 @@ en:
         password_confirmation: Password confirmation
         current_password: Current password
   title_editation: Editing
+  label_page_footer: Page footer
+  title_page_footer_popup: Enter page footer
+  label_gallery_sublinks: Gallery sublinks
+  title_gallery_sublinks_popup: 'Enter gallery sublinks, ex: ID/TITLE,ID/TITLE'
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:

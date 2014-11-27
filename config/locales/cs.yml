@@ -208,7 +208,8 @@ cs:
   title_account_settings: Nastavení účtu
   title_sign_out: Odhlásit se
   title_settings: Nastavení
-  title_index: Akce
+  title_index: Úvod
+  title_events: Akce
   title_sign_in: Přihlásit se
   title_register: Registrace
   title_welcome: Vítejte
@@ -310,6 +311,10 @@ cs:
         password_confirmation: Potvrzení hesla
         current_password: Současné heslo
   title_editation: Editace
+  label_page_footer: Patička stránky
+  title_page_footer_popup: Zadejte patičku stránky
+  label_gallery_sublinks: Galerie pododkazy
+  title_gallery_sublinks_popup: 'Zadejte pododkazy galerie, např: ID/TITLE,ID/TITLE'
 
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:

@@ -1,7 +1,6 @@
 .navbar {
     border: 0px;
     border-radius: 0px;
-    border-bottom: 1px solid white;
 }
 .navbar-default .navbar-nav > li > a {
     color: white;
@@ -99,7 +98,7 @@ body {
         display: none;
     }
     .bottom_buttons > ul.navbar-nav.languages {
-        padding-left: 15px;
+        padding-right: 15px;
     }
     .navbar-default .navbar-nav > li > a {
         font-size: 20px;

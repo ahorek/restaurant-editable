@@ -27,6 +27,11 @@
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/controllers/admin/pages_controller.rb</file>
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/helpers/languages_helper.rb</file>
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/assets/javascripts/application.js</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/controllers/admin/users_controller.rb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/models/user.rb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/config/initializers/devise.rb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/config/database.yml</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/config/environments/development.rb</file>
         </group>
     </open-files>
 </project-private>

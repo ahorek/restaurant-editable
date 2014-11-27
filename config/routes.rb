@@ -16,6 +16,7 @@ BaseApp::Application.routes.draw do
         get 'settings', :as => 'settings'
         get 'index', :as => 'index'
         get 'about', :as => 'about'
+        get 'events', :as => 'events'
         get 'contact', :as => 'contact'
         get 'gallery', :as => 'gallery'
         get 'references', :as => 'references'
@@ -32,6 +33,7 @@ BaseApp::Application.routes.draw do
     collection do
       get 'index', :as => 'index'
       get 'about', :as => 'about'
+      get 'events', :as => 'events'
       get 'contact', :as => 'contact'
       get 'gallery', :as => 'gallery'
       get 'menu', :as => 'menus'

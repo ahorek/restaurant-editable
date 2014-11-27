@@ -4,6 +4,10 @@ class PagesController < ApplicationController
     @templates = Template.where(:page => 'index')
   end
 
+  def events
+    @templates = Template.where(:page => 'events')
+  end
+
   def about
     @templates = Template.where(:page => 'about')
   end
