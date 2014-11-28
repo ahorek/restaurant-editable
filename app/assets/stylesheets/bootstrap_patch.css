@@ -63,24 +63,24 @@
 .navbar .navbar-collapse {
   text-align: center;
 }
-.bottom_buttons > ul.navbar-nav.languages > li > a {
+.action_buttons > ul.navbar-nav.languages > li > a {
     padding: 8px 5px;
 }
-.bottom_buttons > .navbar-nav > li {
+.action_buttons > .navbar-nav > li {
     display: inline-block;
 }
-.bottom_buttons > .navbar-nav.buttons > li > a {
+.action_buttons > .navbar-nav.buttons > li > a {
     padding: 10px 10px;
 }
-.bottom_buttons > .navbar-nav > li > a:hover,
-.bottom_buttons > .navbar-nav > li > a:focus {
+.action_buttons > .navbar-nav > li > a:hover,
+.action_buttons > .navbar-nav > li > a:focus {
     background-color: #6A2222;
 }
-.bottom_buttons > ul.navbar-nav.languages > li > a > img {
+.action_buttons > ul.navbar-nav.languages > li > a > img {
     width: 20px;
     height: 20px;
 }
-.bottom_buttons > ul.navbar-nav.buttons > li a > img {
+.action_buttons > ul.navbar-nav.buttons > li a > img {
     width: 32px;
     height: 32px;
 }
@@ -103,7 +103,7 @@ body {
     .navbar-default .navbar-nav .togglable {
         display: none;
     }
-    .bottom_buttons > ul.navbar-nav.languages {
+    .action_buttons > ul.navbar-nav.languages {
         padding-right: 15px;
     }
     .navbar-default .navbar-nav > li > a {

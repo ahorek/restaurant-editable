@@ -1,5 +1,5 @@
 <div class="clear"></div>
-<div class="navbar-fixed-top bottom_buttons hidden-print">
+<div class="navbar-fixed-top action_buttons hidden-print">
     <ul class="nav navbar-nav pull-right languages">
         <% available_languages.each do |lang| %>
           <li><%= link_to image_tag(flag_file(lang.to_s)), url_for(params.merge(:locale => lang.to_s)), :title => t(:"languages.#{lang.to_s}") %></li>
