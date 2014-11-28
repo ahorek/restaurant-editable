@@ -51,8 +51,11 @@
     height: 140px;
     background: url(<%= asset_data_uri 'top_logo.png'%>) no-repeat center;
 }
-#top_nav, body {
+#bottom_bar, #top_nav, body {
     background: #2B0E0E url(<%= asset_data_uri 'top_nav_background.jpg'%>);
+}
+#bottom_bar {
+    z-index: 0;
 }
 #top_nav, .navbar-fixed-bottom.bottom_buttons {
     z-index: 100;
