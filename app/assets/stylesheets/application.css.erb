@@ -7,11 +7,15 @@
  *= require_bootstrap_patch
  *= require_jquery_ui
  *= require_jquery_galereya
+ *= require_jquery_multilevelpushmenu
  *= require_tree .
 */
 
 .top48 {
     margin-top: 48px;
+}
+#menu_multilevelpushmenu {
+    position: fixed;
 }
 .alert-success {
     background-color: #DFF0D8;
@@ -64,18 +68,49 @@
     max-height: 395px;
 }
 body {
-    padding-top: 210px;
+    padding-top: 160px;
 }
-@media (max-width:768px) {
+#content {
+    padding-left: 300px;
+}
+#content > .container {
+    margin-left: 0px;
+}
+#mobile_menu {
+    display: none;
+}
+#menu {
+    display: inline;
+}
+#menu .multilevelpushmenu_wrapper .levelHolderClass {
+    min-height: 0px;
+    background: none repeat scroll 0% 0% brown;
+}
+
+@media screen and (max-width:768px) , screen and (max-height: 550px) {
+    #mobile_menu {
+        display: block;
+    }
     .top_logo span.top_logo_container {
         background: url(<%= asset_data_uri 'top_logo_mobile.png'%>) no-repeat center;
         height: 60px;
+        margin-top: 30px;
     }
     body {
-      padding-top: 200px;
+      padding-top: 160px;
     }
     #top_nav {
       max-height: 200px;
+    }
+    #bottom_bar, #menu {
+      display: none;
+    }
+    #content {
+      padding-left: 0px;
+    }
+    #content > .container {
+      margin-left: 0px;
+      margin-top: 0px;
     }
 }
 @media print {

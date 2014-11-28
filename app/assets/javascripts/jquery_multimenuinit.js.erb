@@ -1,0 +1,11 @@
+function initMultiMenu() {
+    $('#menu').multilevelpushmenu({
+        containersToPush: [$('#content')],
+        menuWidth: 300,
+        backText: '<%= I18n.t(:title_back) %>',
+        onItemClick: function () {
+            var itemHref = $item.find('a:first').attr('href');
+            location.href = itemHref;
+        }
+    });
+}

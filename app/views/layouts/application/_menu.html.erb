@@ -1,0 +1,56 @@
+<div id="menu">
+    <nav role="navigation">
+        <h2><i class="fa fa-reorder"></i>&nbsp;</h2>
+        <ul>
+            <li>
+                <a href="<%= about_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_about) %></a>
+            </li>
+            <li>
+                <a href="<%= events_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_events) %></a>
+            </li>
+            <li>
+                <a href="<%= menus_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_menu) %></a>
+                <% if (sl = Setting.where(:name => "menu_sublinks_#{I18n.locale}").first.try(:value)).present? && !user_signed_in? %>
+                  <ul>
+                      <% submenus = sl.split(',') %>
+                      <% submenus.each do |submenu| %>
+                        <% sm = submenu.split('/') %>
+                        <li><a href="<%= menus_pages_path %>#<%= sm.first %>"><%= sm.last %></a></li>
+                      <% end %>
+                  </ul>
+                <% end %>
+            </li>
+            <li>
+                <a href="<%= gallery_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_gallery) %></a>
+                <% if (sl = Setting.where(:name => "gallery_sublinks_#{I18n.locale}").first.try(:value)).present? && !user_signed_in? %>
+                  <ul>
+                      <% submenus = sl.split(',') %>
+                      <% submenus.each do |submenu| %>
+                        <% sm = submenu.split('/') %>
+                        <li><a href="<%= gallery_pages_path %>#<%= sm.first %>"><%= sm.last %></a></li>
+                      <% end %>
+                  </ul>
+                <% end %>
+            </li>
+            <li>
+                <a href="<%= contact_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_contact) %></a>
+            </li>
+            <li>
+                <a href="<%= partners_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_partners) %></a>
+            </li>
+            <% if user_signed_in? %>
+                <li>
+                    <a href="<%= edit_user_registration_path %>"><i class="fa fa-laptop"></i><%= t(:title_account_settings) %></a>
+                </li>
+                <% if current_user.admin? %>
+                    <li>
+                        <a href="<%= admin_path %>"><i class="fa fa-laptop"></i><%= t(:title_administration) %></a>
+                    </li>
+                <% end %>
+                <li>
+                    <a href="<%= destroy_user_session_path %>"><i class="fa fa-laptop"></i><%= t(:title_sign_out) %></a>
+                </li>
+            <% end %>
+        </ul>
+    </nav>
+</div>

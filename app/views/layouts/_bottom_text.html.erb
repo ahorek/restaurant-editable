@@ -1,12 +1,12 @@
 <div class="navbar navbar-fixed-bottom hidden-print" id="bottom_bar">
+    <div class="navbar-fixed-bottom bottom_text container hidden-print">
+        <div class="row">
+            <div class="centered">
+                <% if (text = Setting.where(:name => 'text_page_footer').first.try(:value)).present? %>
+                  <%= text %>
+                <% end %>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="navbar-fixed-bottom bottom_text hidden-print container">
-  <div class="row">
-    <div class="centered">
-      <% if (text = Setting.where(:name => 'text_page_footer').first.try(:value)).present? %>
-        <%= text %>
-      <% end %>
-    </div>
-  </div>
-</div>

@@ -5,6 +5,8 @@
 //= require bootstrap_editable
 //= require jquery_galereya
 //= require jquery_ui
+//= require jquery_multilevelpushmenu
+//= require jquery_multimenuinit
 
 function initEditable() {
     $.fn.editable.defaults.mode = 'popup';
@@ -40,6 +42,7 @@ function initEditable() {
 
 $(document).ready(function () {
     initEditable();
+    initMultiMenu();
     $('.thumbnails').each(function () {
         $(this).galereya({size: 200, spacing: 20});
     });

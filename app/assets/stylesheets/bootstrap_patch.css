@@ -37,7 +37,7 @@
     background-color: white;
 }
 .navbar-default .navbar-collapse {
-    border-color: white;
+    border: 0px;
 }
 .navbar-default .navbar-form {
     border-color: white;
@@ -96,7 +96,10 @@ body {
 .popover-title {
     color: black;
 }
-@media (max-width:768px) {
+@media screen and (max-width:768px) , screen and (max-height: 550px) {
+    .navbar-collapse {
+        max-height: 400px;
+    }
     #top_nav a.navbar-brand {
         display: block;
     }
