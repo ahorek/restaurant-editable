@@ -14,7 +14,15 @@
             <li><%= link_to(t(:title_about), about_admin_pages_path) %></li>
             <li><%= link_to(t(:title_events), events_admin_pages_path) %></li>
             <li><%= link_to(t(:title_contact), contact_admin_pages_path) %></li>
-            <li><%= link_to(t(:title_gallery), gallery_admin_pages_path) %></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= t(:title_gallery) %><span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="<%= gallery1_admin_pages_path %>"><%= t(:title_gallery1) %></a></li>
+                <li><a href="<%= gallery2_admin_pages_path %>"><%= t(:title_gallery2) %></a></li>
+              </ul>
+            </li>
+
             <li><%= link_to(t(:title_partners), partners_admin_pages_path) %></li>
             <li><%= link_to(t(:title_users), admin_users_path) %></li>
             <li><%= link_to(t(:title_settings), settings_admin_pages_path) %></li>

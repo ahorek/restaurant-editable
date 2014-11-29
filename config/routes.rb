@@ -18,8 +18,9 @@ BaseApp::Application.routes.draw do
         get 'about', :as => 'about'
         get 'events', :as => 'events'
         get 'contact', :as => 'contact'
-        get 'gallery', :as => 'gallery'
         get 'partners', :as => 'partners'
+        get 'gallery1', :as => 'gallery1'
+        get 'gallery2', :as => 'gallery2'
       end
     end
     resources :settings do
@@ -35,9 +36,13 @@ BaseApp::Application.routes.draw do
       get 'about', :as => 'about'
       get 'events', :as => 'events'
       get 'contact', :as => 'contact'
-      get 'gallery', :as => 'gallery'
-      get 'menu', :as => 'menus'
       get 'partners', :as => 'partners'
+      get 'menu1', :as => 'menus1'
+      get 'menu2', :as => 'menus2'
+      get 'menu3', :as => 'menus3'
+      get 'menu4', :as => 'menus4'
+      get 'gallery1', :as => 'gallery1'
+      get 'gallery2', :as => 'gallery2'
     end
   end
 

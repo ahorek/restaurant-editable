@@ -7,6 +7,7 @@
 //= require jquery_ui
 //= require jquery_multilevelpushmenu
 //= require jquery_multimenuinit
+//= require modernizr
 
 function initEditable() {
     $.fn.editable.defaults.mode = 'popup';

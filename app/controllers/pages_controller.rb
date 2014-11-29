@@ -1,31 +1,53 @@
 class PagesController < ApplicationController
 
   def index
-    @templates = Template.where(:page => 'index')
+    get_tempates('index')
   end
 
   def events
-    @templates = Template.where(:page => 'events')
+    get_tempates('events')
   end
 
   def about
-    @templates = Template.where(:page => 'about')
+    get_tempates('about')
   end
 
   def contact
-    @templates = Template.where(:page => 'contact')
-  end
-
-  def gallery
-    @templates = Template.where(:page => 'gallery')
-  end
-
-  def menu
-    @templates = Template.where(:page => 'menu')
+    get_tempates('contact')
   end
 
   def partners
-    @templates = Template.where(:page => 'partners')
+    get_tempates('partners')
+  end
+
+  def gallery1
+    get_tempates('gallery1')
+  end
+
+  def gallery2
+    get_tempates('gallery2')
+  end
+
+  def menu1
+    get_tempates('menu1')
+  end
+
+  def menu2
+    get_tempates('menu2')
+  end
+
+  def menu3
+    get_tempates('menu3')
+  end
+
+  def menu4
+    get_tempates('menu4')
+  end
+
+  private
+
+  def get_tempates(page)
+    @templates = Template.where(:page => page)
   end
 
 end

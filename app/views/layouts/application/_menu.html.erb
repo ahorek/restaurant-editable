@@ -3,52 +3,44 @@
         <h2><i class="fa fa-reorder"></i>&nbsp;</h2>
         <ul>
             <li>
-                <a href="<%= about_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_about) %></a>
+                <a href="<%= about_pages_path %>"><i class="fa"></i><%= t(:title_about) %></a>
             </li>
             <li>
-                <a href="<%= events_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_events) %></a>
+                <a href="<%= events_pages_path %>"><i class="fa"></i><%= t(:title_events) %></a>
             </li>
             <li>
-                <a href="<%= menus_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_menu) %></a>
-                <% if (sl = Setting.where(:name => "menu_sublinks_#{I18n.locale}").first.try(:value)).present? && !user_signed_in? %>
-                  <ul>
-                      <% submenus = sl.split(',') %>
-                      <% submenus.each do |submenu| %>
-                        <% sm = submenu.split('/') %>
-                        <li><a href="<%= menus_pages_path %>#<%= sm.first %>"><%= sm.last %></a></li>
-                      <% end %>
-                  </ul>
-                <% end %>
+                <a href="#"><i class="fa"></i><%= t(:title_menu) %></a>
+                <ul>
+                  <li><a href="<%= menus1_pages_path %>"><%= t(:title_menu1) %></a></li>
+                  <li><a href="<%= menus2_pages_path %>"><%= t(:title_menu2) %></a></li>
+                  <li><a href="<%= menus3_pages_path %>"><%= t(:title_menu3) %></a></li>
+                  <li><a href="<%= menus4_pages_path %>"><%= t(:title_menu4) %></a></li>
+                </ul>
             </li>
             <li>
-                <a href="<%= gallery_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_gallery) %></a>
-                <% if (sl = Setting.where(:name => "gallery_sublinks_#{I18n.locale}").first.try(:value)).present? && !user_signed_in? %>
-                  <ul>
-                      <% submenus = sl.split(',') %>
-                      <% submenus.each do |submenu| %>
-                        <% sm = submenu.split('/') %>
-                        <li><a href="<%= gallery_pages_path %>#<%= sm.first %>"><%= sm.last %></a></li>
-                      <% end %>
-                  </ul>
-                <% end %>
+                <a href="#"><i class="fa"></i><%= t(:title_gallery) %></a>
+                <ul>
+                  <li><a href="<%= gallery1_pages_path %>"><%= t(:title_gallery1) %></a></li>
+                  <li><a href="<%= gallery2_pages_path %>"><%= t(:title_gallery2) %></a></li>
+                </ul>
             </li>
             <li>
-                <a href="<%= contact_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_contact) %></a>
+                <a href="<%= contact_pages_path %>"><i class="fa"></i><%= t(:title_contact) %></a>
             </li>
             <li>
-                <a href="<%= partners_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_partners) %></a>
+                <a href="<%= partners_pages_path %>"><i class="fa"></i><%= t(:title_partners) %></a>
             </li>
             <% if user_signed_in? %>
                 <li>
-                    <a href="<%= edit_user_registration_path %>"><i class="fa fa-laptop"></i><%= t(:title_account_settings) %></a>
+                    <a href="<%= edit_user_registration_path %>"><i class="fa"></i><%= t(:title_account_settings) %></a>
                 </li>
                 <% if current_user.admin? %>
                     <li>
-                        <a href="<%= admin_path %>"><i class="fa fa-laptop"></i><%= t(:title_administration) %></a>
+                        <a href="<%= admin_path %>"><i class="fa"></i><%= t(:title_administration) %></a>
                     </li>
                 <% end %>
                 <li>
-                    <a href="<%= destroy_user_session_path %>"><i class="fa fa-laptop"></i><%= t(:title_sign_out) %></a>
+                    <a href="<%= destroy_user_session_path %>"><i class="fa"></i><%= t(:title_sign_out) %></a>
                 </li>
             <% end %>
         </ul>

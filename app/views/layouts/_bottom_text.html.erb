@@ -2,7 +2,7 @@
     <div class="navbar-fixed-bottom bottom_text container hidden-print">
         <div class="row">
             <div class="centered">
-                <% if (text = Setting.where(:name => 'text_page_footer').first.try(:value)).present? %>
+                <% if (text = Setting.where(:name => "text_page_footer_#{I18n.locale}").first.try(:value)).present? %>
                   <%= text %>
                 <% end %>
             </div>

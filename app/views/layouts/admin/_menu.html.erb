@@ -3,31 +3,35 @@
         <h2><i class="fa fa-reorder"></i>&nbsp;</h2>
         <ul>
             <li>
-                <a href="<%= index_admin_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_index) %></a>
+                <a href="<%= index_admin_pages_path %>"><i class="fa"></i><%= t(:title_index) %></a>
             </li>
             <li>
-                <a href="<%= about_admin_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_about) %></a>
+                <a href="<%= about_admin_pages_path %>"><i class="fa"></i><%= t(:title_about) %></a>
             </li>
             <li>
-                <a href="<%= events_admin_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_events) %></a>
+                <a href="<%= events_admin_pages_path %>"><i class="fa"></i><%= t(:title_events) %></a>
             </li>
             <li>
-                <a href="<%= contact_admin_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_contact) %></a>
+                <a href="<%= contact_admin_pages_path %>"><i class="fa"></i><%= t(:title_contact) %></a>
             </li>
             <li>
-                <a href="<%= gallery_admin_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_gallery) %></a>
+                <a href="#"><i class="fa"></i><%= t(:title_gallery) %></a>
+                <ul>
+                  <li><a href="<%= gallery1_admin_pages_path %>"><%= t(:title_gallery1) %></a></li>
+                  <li><a href="<%= gallery2_admin_pages_path %>"><%= t(:title_gallery2) %></a></li>
+                </ul>
             </li>
             <li>
-                <a href="<%= partners_admin_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_partners) %></a>
+                <a href="<%= partners_admin_pages_path %>"><i class="fa"></i><%= t(:title_partners) %></a>
             </li>
             <li>
-                <a href="<%= admin_users_path %>"><i class="fa fa-laptop"></i><%= t(:title_users) %></a>
+                <a href="<%= admin_users_path %>"><i class="fa"></i><%= t(:title_users) %></a>
             </li>
             <li>
-                <a href="<%= settings_admin_pages_path %>"><i class="fa fa-laptop"></i><%= t(:title_settings) %></a>
+                <a href="<%= settings_admin_pages_path %>"><i class="fa"></i><%= t(:title_settings) %></a>
             </li>
             <li>
-                <a href="<%= root_path %>"><i class="fa fa-laptop"></i><%= t(:title_back) %></a>
+                <a href="<%= root_path %>"><i class="fa"></i><%= t(:title_back) %></a>
             </li>
         </ul>
     </nav>

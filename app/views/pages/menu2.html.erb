@@ -1,6 +1,6 @@
 <% if user_signed_in? %>
   <div class="page-header">
-    <h2><%= t(:title_editation) %> <%= t(:title_menu) %></h2>
+    <h2><%= t(:title_editation) %> <%= t(:title_menu2) %></h2>
   </div>
 
   <table class="table table-striped table-bordered table-condensed">
@@ -19,7 +19,7 @@
           <td><%= image_tag(flag_file(lang), :title => t(:"lang_names.#{lang}")) %></td>
           <td<%= " class='red'".html_safe if menu.nil? || (menu.updated_at < (Date.today - 7.days)) %>><%= l( menu.updated_at, :format => :long) if menu %></td>
           <td><%= link_to t(:button_show), template_path(menu) if menu %></td>
-          <td><%= link_to t(:button_edit), modal_templates_path(:template => {:language => lang, :page => 'menu'}), remote: true %>
+          <td><%= link_to t(:button_edit), modal_templates_path(:template => {:language => lang, :page => 'menu2'}), remote: true %>
           </td>
         </tr>
       <% end %>

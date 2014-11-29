@@ -231,6 +231,12 @@ cs:
   title_facebook: Facebook
   title_users: Uživatelé
   title_edit_modal: Editace
+  title_menu1: Jídelní lístek
+  title_menu2: Nápojový lístek
+  title_menu3: Vinný lístek
+  title_menu4: Týdenní lístek
+  title_gallery1: Interiér
+  title_gallery2: Jídlo
   label_facebook_link: Facebook odkaz
   button_destroy: Odstranit
   button_show: Zobrazit
