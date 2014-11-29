@@ -6,8 +6,11 @@ class Admin::PagesController < PagesController
   include LanguagesHelper
 
   def settings
-    @fo_setting = Setting.where(:name => 'text_page_footer').first
     @fb_setting = Setting.where(:name => 'facebook_url').first
+    @fo_setting = {}
+    available_languages.each do |lang|
+      @fo_setting[lang] = Setting.where(:name => "text_page_footer_#{lang}").first
+    end
   end
 
   def index

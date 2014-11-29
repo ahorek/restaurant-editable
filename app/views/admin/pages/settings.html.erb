@@ -21,7 +21,7 @@
           data-pk="<%= @fo_setting[lang].try(:id) %>"
           data-url="<%= save_admin_settings_path({:format => 'json'}) %>"
           data-title="<%= t(:title_page_footer_popup) %>"
-          data-name='setting[text_page_<%= lang.to_s %>]'
+          data-name='setting[text_page_footer_<%= lang.to_s %>]'
           data-value="<%= @fo_setting[lang].try(:value).to_s %>"><%= @fo_setting[lang].try(:value).to_s %></span>
   </p>
 <% end %>
