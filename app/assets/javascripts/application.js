@@ -6,7 +6,6 @@
 //= require jquery_galereya
 //= require jquery_ui
 //= require jquery_multilevelpushmenu
-//= require jquery_multimenuinit
 //= require modernizr
 
 function initEditable() {
@@ -43,7 +42,6 @@ function initEditable() {
 
 $(document).ready(function () {
     initEditable();
-    initMultiMenu();
     $('.thumbnails').each(function () {
         $(this).galereya({size: 200, spacing: 20});
     });
