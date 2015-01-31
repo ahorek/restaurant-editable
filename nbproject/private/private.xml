@@ -5,12 +5,6 @@
         <group>
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/application/_header.html.erb</file>
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/_bottom_text.html.erb</file>
-            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/assets/stylesheets/application.css.erb</file>
-            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/_bottom_buttons.html.erb</file>
-            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/_languages.html.erb</file>
-            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/pages/contact.html.erb</file>
-            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/assets/stylesheets/bootstrap_patch.css</file>
-            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/admin.html.erb</file>
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/_header_scripts.html.erb</file>
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/assets/javascripts/application.js</file>
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/application.html.erb</file>
@@ -19,8 +13,30 @@
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/admin/_mobile_menu.html.erb</file>
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/admin/_main_nav.html.erb</file>
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/layouts/admin/_menu.html.erb</file>
-            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/assets/javascripts/jquery_multimenuinit.js.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/controllers/pages_controller.rb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/config/routes.rb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/controllers/admin/pages_controller.rb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/admin/pages/settings.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/admin/pages/menu1.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/admin/pages/events.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/admin/pages/gallery1.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/pages/about.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/pages/menu1.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/pages/gallery1.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/pages/menu2.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/pages/gallery2.html.erb</file>
             <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/config/locales/cs.yml</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/pages/menu3.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/pages/menu4.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/views/admin/pages/gallery2.html.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/config/locales/en.yml</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/config/locales/de.yml</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/config/locales/pl.yml</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/assets/stylesheets/bootstrap_patch.css</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/controllers/admin/settings_controller.rb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/assets/javascripts/jquery_multilevelpushmenu.js</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/assets/stylesheets/application.css.erb</file>
+            <file>file:/C:/moje/prace/restaurace/repository/restarurant-editable/app/assets/stylesheets/bootstrap.css.erb</file>
         </group>
     </open-files>
 </project-private>

@@ -5,8 +5,9 @@
 //= require bootstrap_editable
 //= require jquery_galereya
 //= require jquery_ui
-//= require jquery_multilevelpushmenu
-//= require modernizr
+//
+// require jquery_multilevelpushmenu
+// require modernizr
 
 function initEditable() {
     $.fn.editable.defaults.mode = 'popup';
